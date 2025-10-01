@@ -1,0 +1,6 @@
+# Permitir que todos os buscadores acessem o site
+User-agent: *
+Allow: /
+
+# Sitemap do site institucional
+Sitemap: https://www.seusite.com/sitemap.xml
