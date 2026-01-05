@@ -190,6 +190,16 @@ body {
   color: var(--branco1);
 }
 
+.footer-bottom a{
+  font-size: 13px;
+  color: var(--branco1);
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover{
+  color: var(--roxo1);
+}
+
 .footer-social-links {
   display: flex;
   gap: 20px;
