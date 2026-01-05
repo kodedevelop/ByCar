@@ -16,6 +16,7 @@ span.faixaPretaSubtitulo{
 }
 
 h1.faixaPretaTitulo{
+    cursor: default;
     position: relative;
     font-size: 35px;
     font-weight: bold;
@@ -33,6 +34,14 @@ h1.faixaPretaTitulo::before{
     background-color: var(--amarelo5);
 }
 
+.palavraAmarelou{
+    transition: .3s ease;
+}
+
+.palavraAmarelou:hover{
+    color:  var(--amarelo3);
+}
+
 span.pontoAmarelo{
     color: var(--amarelo5);
 }
@@ -41,6 +50,7 @@ img.decoracao{
     position: absolute;
     top: 40px;
     right: 60px;
+    transition: .3s ease;
 }
 
 /* -- Formulário */
