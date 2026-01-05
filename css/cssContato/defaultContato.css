@@ -1,6 +1,7 @@
 @import url('../arquivoBase.css');
 
-/* Main */
+/* - Main */
+/* -- Faixa Preta */
 div.faixaPreta{
     position: relative;
     padding: 40px 40px 40px 80px;
@@ -40,4 +41,89 @@ img.decoracao{
     position: absolute;
     top: 40px;
     right: 60px;
+}
+
+/* -- Formulário */
+section#contato{
+    padding: 60px;
+    background-color: var(--branco2);
+}
+
+div.contatoContainer{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+p#contatoTexto{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--preto3);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--preto5);
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: var(--branco1);
+    outline: none;
+    transition: .3s ease;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 18px;
+    color: var(--preto1);
+}
+
+input:hover, textarea:hover{
+    border: 2px solid var(--amarelo5);
+}
+
+input:focus, textarea:focus{
+    border: 2px solid var(--amarelo5);
+}
+
+.inputsDupla{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea{
+    height: 100px;
+}
+
+button#enviarForm{
+    cursor: pointer;
+    width: fit-content;
+    padding: 15px 60px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco1);
+    background-color: var(--preto5);
+    transition: .3s ease;
+}
+
+button#enviarForm > i{
+    margin-left: 15px;
+}
+
+button#enviarForm:hover{
+    scale: 1.02;
+    box-shadow: 0 0 20px var(--preto1);
 }

@@ -7,6 +7,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/cssContato/defaultContato.css">
+
+    <!-- Bootstap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header></header>
@@ -18,8 +21,35 @@
 
             <h1 class="faixaPretaTitulo">nosso CONTATO<span class="pontoAmarelo">.</span></h1>
 
-            <img src="../assets/icons/deco.svg" class="decoracao">
+            <img src="../assets/icons/deco.svg" class="decoracao" alt="">
         </div>
+
+        <!-- Section - Contato -->
+        <section id="contato">
+            <div class="contatoContainer">
+                <p id="contatoTexto">Quer falar sobre algum serviço? Preencha o formulário abaixo e <b>Entre em Contato!</b></p>
+
+                <!-- Formulário -->
+                <form action="#">
+                    <!-- Nome -->
+                    <input type="text" placeholder="Digite seu nome" required>
+                    
+                    <!-- Div com os inputs Número e E-mail  -->
+                    <div class="inputsDupla">
+                        <!-- Número -->
+                        <input type="number" placeholder="Digite seu número de whatsapp" required>
+                        <!-- E-mail -->
+                        <input type="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <textarea placeholder="Digite sua mensagem aqui" required></textarea>
+
+                    <!-- Button -->
+                    <button id="enviarForm">ENVIAR MENSAGEM <i class="bi bi-arrow-right"></i></button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer></footer>
