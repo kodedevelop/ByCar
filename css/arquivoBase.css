@@ -1,0 +1,46 @@
+/*  - Imports */
+/* -- Fonte: Exo */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+/* -- Fonte: Exo2 */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* - Reset CSS */
+*{
+    box-sizing: border-box;
+    font-family: var(--exo1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Variáveis */
+:root{
+    /* - Cores */
+    /* -- Cores SÓLIDAS */
+    --amarelo5: #FFBB00;
+    --amarelo4: #E7A50C;
+    --amarelo3: #CC9200;
+    --amarelo2: #A67800;
+    --amarelo1: #805F00;
+
+    --preto5:    #000000;
+    --preto4:    #141414;
+    --preto3:    #333333;
+    --preto2:    #555555;
+    --preto1:    #777777;
+    --preto5_70: #7777776e;
+
+    --branco2: #F0F3F7;
+    --branco1: #FFFFFF;
+
+    --verde1: #15FF00;
+
+    /* -- Cores GRADIENTES */
+    --amareloGrandient: linear-gradient(90deg,rgba(255, 214, 102, 1) 0%, rgba(255, 179, 25, 1) 100%);
+
+
+    /* - Tipografia */
+    --exo1: "Exo", sans-serif;
+    --exo2: "Exo 2", sans-serif;
+}
