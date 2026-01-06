@@ -34,10 +34,7 @@
 
     textarea{ height: 120px; }
 
-    button#enviarForm{
-        width: 100%;
-        font-size: 18px;
-    }
+    button#enviarForm{ font-size: 18px; }
 }
 
 /* Telas com 250px - 429px */
@@ -86,13 +83,7 @@
 
     textarea{ height: 120px; }
 
-    button#enviarForm{
-        width: 100%;
-        padding: 15px 0;
-        font-size: 15px;
-    }
+    button#enviarForm{ font-size: 15px; }
 
-    button#enviarForm > i{
-        margin-left: 10px;
-    }
+    button#enviarForm > i{ margin-left: 10px; }
 }

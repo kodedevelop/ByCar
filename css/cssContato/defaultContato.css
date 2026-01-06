@@ -123,8 +123,8 @@ textarea{
 
 button#enviarForm{
     cursor: pointer;
-    width: fit-content;
-    padding: 15px 60px;
+    width: 100%;
+    padding: 15px 0;
     border-radius: 8px;
     border: none;
     font-size: 20px;
