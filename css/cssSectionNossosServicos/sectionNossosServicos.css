@@ -1,0 +1,57 @@
+@import url('../arquivoBase.css');
+
+section.nossos-servicos {
+  max-width: 1560px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.titulo-nossos-servicos {
+  font-family: var(--exo1);
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.titulo-nossos-servicos-amarelo {
+  color: var(--amarelo5);
+  font-weight: bold;
+}
+
+.container-cards-nossos-servicos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.cards-nossos-servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 520px;
+  height: 300px;
+  border: 4px solid var(--amarelo2);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.cards-nossos-servicos h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.cards-nossos-servicos p {
+  max-width: 430px;
+  font-size: 22px;
+  text-align: center;
+  font-family: var(--montserrat);
+  font-weight: normal;
+}
+
+.cards-nossos-servicos img {
+  width: 20px;
+}
