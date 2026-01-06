@@ -41,7 +41,7 @@
 }
 
 /* Telas com 250px - 429px */
-@media screen and (min-width: 250px) and (max-width: 429px){
+@media screen and (max-width: 429px){
     /* - Main */
     /* -- Faixa Preta */
     div.faixaPreta{ padding: 30px 20px; }
@@ -88,6 +88,11 @@
 
     button#enviarForm{
         width: 100%;
-        font-size: 18px;
+        padding: 15px 0;
+        font-size: 15px;
+    }
+
+    button#enviarForm > i{
+        margin-left: 10px;
     }
 }
