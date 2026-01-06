@@ -1,4 +1,5 @@
 @import url('../arquivoBase.css');
+@import url('keyframesContato.css');
 
 /* - Main */
 /* -- Faixa Preta */
@@ -53,15 +54,19 @@ img.decoracao{
     transition: .3s ease;
 }
 
-/* -- Formulário */
+
+/* -- Section - Contato */
 section#contato{
+    position: relative;
     padding: 60px;
     background-color: var(--branco2);
 }
 
 div.contatoContainer{
+    position: relative; /* Uso dessa propriedade apenas para que o z-index funcione (z-index só funciona se o elemento possuir um position definido) */
     max-width: 700px;
     margin: 0 auto;
+    z-index: 2;
 }
 
 p#contatoTexto{
@@ -136,4 +141,22 @@ button#enviarForm > i{
 button#enviarForm:hover{
     scale: 1.02;
     box-shadow: 0 0 20px var(--preto1);
+}
+
+/* Pictograma de Estrela */
+img.yellow-star{ 
+    position: absolute;
+    opacity: .35;
+    z-index: 1;
+}
+
+img.yellow-star:nth-child(2){
+    top: 5%;
+    left: 5%;
+    animation: yellow-star1 9s infinite;
+}
+img.yellow-star:nth-child(3){
+    bottom: 3%;
+    right: 8%;
+    animation: yellow-star2 9s infinite;
 }

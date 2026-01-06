@@ -1,0 +1,17 @@
+/* 1a estrela amarela da section Contato */
+@keyframes yellow-star1{
+    0%{left: 5%;}
+    25%{left: 10%;}
+    50%{left: 2%;}
+    75%{top: 20%;}
+    100%{left: 5%;}
+}
+
+/* 2a estrela amarela da section Contato */
+@keyframes yellow-star2{
+    0%{bottom: 3%;}
+    25%{bottom: 12%;}
+    50%{right: 18%;}
+    75%{right: 5%;}
+    100%{bottom: 3%;}
+}
