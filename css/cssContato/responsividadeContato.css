@@ -1,0 +1,46 @@
+@import url('../arquivoBase.css');
+
+/* Telas com 430px - 565px*/
+@media screen and (min-width: 430px) and (max-width: 565px){
+    /* - Main */
+    /* -- Faixa Preta */
+    div.faixaPreta{ padding: 30px 40px; }
+
+    span.faixaPretaSubtitulo{ font-size: 15px; }
+
+    h1.faixaPretaTitulo{ font-size: 30px; }
+
+    h1.faixaPretaTitulo::before{
+        width: 25px;
+        height: 5px;
+    }
+
+    img.decoracao{
+        top: 30px;
+        right: 30px;
+        width: 40px;
+    }
+}
+
+/* Telas com 350px - 429px */
+@media screen and (min-width: 250px) and (max-width: 429px){
+    /* - Main */
+    /* -- Faixa Preta */
+    div.faixaPreta{ padding: 30px 20px; }
+
+    span.faixaPretaSubtitulo{ font-size: 12px; }
+
+    h1.faixaPretaTitulo{ font-size: 25px; }
+
+    h1.faixaPretaTitulo::before{
+        width: 20px;
+        height: 4px;
+        margin-right: 10px;
+    }
+
+    img.decoracao{
+        top: 30px;
+        right: 30px;
+        width: 35px;
+    }
+}
