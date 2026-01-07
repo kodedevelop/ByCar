@@ -6,6 +6,7 @@
     <title>ByCar | Contato</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/cssMenuNavBar/cssMenuNavBar.css">
     <link rel="stylesheet" href="../css/cssContato/defaultContato.css">
     <link rel="stylesheet" href="../css/cssContato/responsividadeContato.css">
     <link rel="stylesheet" href="../css/cssFooter/defaultFooter.css">
@@ -19,7 +20,62 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header></header>
+    <header class="section1-header">
+        <!-- Top bar -->
+        <div class="section1-topbar">
+            <div class="section1-topbar-info">
+                <span class="section1-status-dot"></span>
+                <span>Seg à Sáb</span>
+                <span>8:00–18:00</span>
+            </div>
+
+            <div class="section1-topbar-site">
+                comercial@bycarautopremium.com.br
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="section1-nav container">
+            <div class="section1-logo">
+                <a href="#"><img src="../assets/img/logos/marca.svg" alt="BYCAR Auto Premium"></a>
+            </div>
+
+            <!-- Desktop menu -->
+            <ul class="section1-menu">
+                <li><a href="#" class="is-active">Home</a></li>
+
+                <li class="section1-dropdown">
+                    <a href="#">Serviços +</a>
+                    <ul class="section1-submenu">
+                        <li><a href="#">Serviço 1</a></li>
+                        <li><a href="#">Serviço 2</a></li>
+                        <li><a href="#">Serviço 3</a></li>
+                        <li><a href="#">Serviço 4</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <!-- Mobile toggle -->
+            <button class="section1-mobile-toggle" aria-label="Abrir menu">☰ Menu</button>
+        </div>
+
+        <!-- Mobile menu -->
+        <nav class="section1-mobile-menu">
+            <a href="#" class="is-active">Home</a>
+
+            <details class="section1-mobile-dropdown">
+                <summary>Serviços +</summary>
+                <a href="#">Serviço 1</a>
+                <a href="#">Serviço 2</a>
+                <a href="#">Serviço 3</a>
+                <a href="#">Serviço 4</a>
+            </details>
+
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
     <main>
         <!-- Faixa Preta -->
