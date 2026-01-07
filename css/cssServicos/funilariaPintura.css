@@ -1,0 +1,247 @@
+@import url(../arquivoBase.css);
+
+.serv-header {
+  background-color: var(--preto5);
+  color: var(--branco1);
+  padding: 40px 20px;
+  text-align: left;
+  position: relative;
+}
+
+.serv-header::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/icons/deco.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.serv-header-content {
+  max-width: 1200px;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.serv-service-label {
+  font-size: 20px;
+  color: var(--preto1);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.serv-service-title {
+  font-size: 36px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+}
+
+.serv-yellow-line {
+  display: inline-block;
+  width: 30px;
+  height: 8px;
+  background-color: var(--amarelo5);
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.serv-yellow-dot {
+  color: var(--amarelo5);
+  font-style: normal;
+}
+
+.serv-header-description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--branco2);
+  max-width: 900px;
+}
+
+.serv-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.serv-section {
+  background-color: var(--branco1);
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.serv-section-aluminio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serv-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--preto5);
+  position: relative;
+  padding-top: 20px;
+}
+
+.serv-section-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--amarelo5);
+}
+
+.serv-section-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.serv-btn-orcamento {
+  background: var(--amareloGrandient);
+  color: #000;
+  border: none;
+  padding: 14px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.serv-btn-orcamento:hover {
+  background-color: #ffc700;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.serv-aluminio-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.serv-section-convencional {
+  background-color: var(--preto5);
+  color: var(--branco1);
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.serv-section-convencional-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serv-section-convencional .serv-section-title {
+  color: var(--branco1);
+}
+
+.serv-section-convencional .serv-section-text {
+  color: var(--branco2);
+}
+
+.serv-convencional-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .serv-header {
+    padding: 40px 20px;
+  }
+
+  .serv-header::before {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    top: 20px;
+  }
+
+  .serv-header-content {
+    padding: 0 20px;
+  }
+
+  .serv-service-label {
+    font-size: 16px;
+  }
+
+  .serv-service-title {
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  .serv-yellow-line {
+    width: 25px;
+  }
+
+  .serv-header-description {
+    font-size: 14px;
+  }
+
+  .serv-section-title {
+    font-size: 22px;
+  }
+
+  .serv-section-text {
+    font-size: 15px;
+  }
+
+  .serv-section-aluminio,
+  .serv-section-convencional-content {
+    grid-template-columns: 1fr;
+  }
+
+  .serv-btn-orcamento {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serv-section-aluminio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serv-section-aluminio > div:last-child {
+    order: 1;
+  }
+
+  .serv-section-aluminio > div:first-child {
+    order: 2;
+  }
+
+  .serv-section-convencional-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serv-section-convencional-content > div:first-child {
+    order: 1;
+  }
+
+  .serv-section-convencional-content > div:last-child {
+    order: 2;
+  }
+}
