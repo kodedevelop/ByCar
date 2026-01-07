@@ -107,18 +107,13 @@ input:focus, textarea:focus{
     border: 2px solid var(--amarelo5);
 }
 
-.inputsDupla{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-}
-
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
 textarea{
     height: 100px;
+    resize: none;
 }
 
 button#enviarForm{

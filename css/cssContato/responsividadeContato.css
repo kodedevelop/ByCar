@@ -27,11 +27,6 @@
 
     p#contatoTexto{ font-size: 25px; }
 
-    .inputsDupla{
-        flex-direction: column;
-        gap: 20px;
-    }
-
     textarea{ height: 120px; }
 
     button#enviarForm{ font-size: 18px; }
@@ -75,11 +70,6 @@
     input, textarea{ font-size: 15px; }
 
     input::placeholder, textarea::placeholder{ font-size: 15px; }
-
-    .inputsDupla{
-        flex-direction: column;
-        gap: 20px;
-    }
 
     textarea{ height: 120px; }
 
