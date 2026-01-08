@@ -12,6 +12,7 @@ section.nossos-servicos {
   font-family: var(--exo1);
   font-size: 48px;
   font-weight: 500;
+  padding-left: 2px;
 }
 
 .titulo-nossos-servicos-amarelo {
@@ -37,6 +38,7 @@ section.nossos-servicos {
   border: 4px solid var(--amarelo2);
   border-radius: 8px;
   padding: 20px;
+  gap: 10px;
 }
 
 .cards-nossos-servicos h3 {
