@@ -93,6 +93,7 @@
   min-width: 200px;
   border-top: 3px solid var(--amarelo5, #e9a100);
   box-shadow: 0 5px 8px rgba(0,0,0,.15);
+  z-index: 1;
 }
 
 .section1-submenu a {
