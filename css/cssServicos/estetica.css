@@ -221,17 +221,18 @@
     margin-right: auto;
   }
 
+  /* Corrigindo a ordem para mobile: texto, botão, imagem */
   .serv-section-aluminio {
     display: flex;
     flex-direction: column;
   }
 
-  .serv-section-aluminio > div:last-child {
-    order: 1;
+  .serv-section-aluminio figure {
+    order: 2;
   }
 
-  .serv-section-aluminio > div:first-child {
-    order: 2;
+  .serv-section-aluminio > div {
+    order: 1;
   }
 
   .serv-section-convencional-content {
@@ -239,11 +240,11 @@
     flex-direction: column;
   }
 
-  .serv-section-convencional-content > div:first-child {
+  .serv-section-convencional-content > div {
     order: 1;
   }
 
-  .serv-section-convencional-content > div:last-child {
+  .serv-section-convencional-content figure {
     order: 2;
   }
 }
