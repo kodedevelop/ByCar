@@ -91,33 +91,13 @@ section.nossos-servicos {
     gap: 5px;
   }
 
-  .cards-nossos-servicos:nth-child(odd) {
-    border-color: var(--preto5);
-  }
-
-  .cards-nossos-servicos:nth-child(even) {
-    border-color: var(--amarelo5);
-  }
-
   .cards-nossos-servicos h3 {
     font-size: 20px;
-  }
-
-  .cards-nossos-servicos:nth-child(2) h3 {
-    color: var(--preto5);
-  }
-
-  .cards-nossos-servicos:nth-child(even) h3 {
-    color: var(--amarelo5);
   }
 
   .titulo-servico::after {
     width: 14px;
     height: 14px;
-  }
-
-  .cards-nossos-servicos:nth-child(even) .titulo-servico::after {
-    background-image: url("/assets/icons/arrow-up-right-yellow.svg");
   }
 
   .cards-nossos-servicos p {
