@@ -1,11 +1,11 @@
 export default function initCarrosselMarcas() {
   const logos = [
-    'bmw-logo.png',
-    'ceramic-pro-logo.png',
-    'glasurit-logo.png',
-    'kavaca-logo.png',
-    'porsche-logo.png',
-    'windowblue-logo.png',
+    'bmw-logo.webp',
+    'ceramic-pro-logo.webp',
+    'glasurit-logo.webp',
+    'kavaca-logo.webp',
+    'porsche-logo.webp',
+    'windowblue-logo.webp',
   ];
 
   const logoPath = '../../assets/img/marcas/';
