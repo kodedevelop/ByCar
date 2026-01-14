@@ -16,6 +16,10 @@
     text-decoration: none;
 }
 
+body{
+    background-color:   var(--branco2);
+}
+
 /* Variáveis */
 :root{
     /* - Cores */
