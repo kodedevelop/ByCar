@@ -13,6 +13,7 @@ section.nossos-servicos {
   font-size: 48px;
   font-weight: 500;
   padding-left: 2px;
+  color: var(--preto4);
 }
 
 .titulo-nossos-servicos-amarelo {
@@ -45,9 +46,11 @@ section.nossos-servicos {
   text-align: center;
   font-size: 31px;
   font-weight: 600;
+  color: var(--preto4);
 }
 
 .cards-nossos-servicos p {
+  color: var(--preto4);
   max-width: 430px;
   font-size: 22px;
   text-align: center;

@@ -1,12 +1,11 @@
-
-.hero-video {
+.section3 .hero-video {
   position: relative;
-  height: 70vh;
+  height: 75vh;
   min-height: 450px;
   overflow: hidden;
 }
 
-.hero-video-bg {
+.section3 .hero-video-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -14,26 +13,27 @@
   object-fit: cover;
 }
 
-.hero-overlay {
+.section3 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.hero-content {
+.section3 .hero-content {
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 24px;
   text-align: center;
 }
 
-.hero-content h1 {
+.section3 .hero-content h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 16px;
+  color: var(--preto4);
 }
 
-.hero-content p {
+.section3 .hero-content p {
   max-width: 700px;
   margin: 0 auto 28px;
   font-size: 1.05rem;
@@ -41,19 +41,18 @@
   color: #555;
 }
 
-.hero-actions {
+.section3 .hero-actions {
   display: flex;
   justify-content: center;
 }
 
-.hero-cta-box {
+.section3 .hero-cta-box {
   display: inline-flex;
   align-items: center;
 }
 
-
-.btn-primary {
- background: var(--amareloGrandient);
+.section3 .btn-primary {
+  background: var(--amareloGrandient);
   color: #000;
   border: none;
   padding: 14px 35px;
@@ -65,7 +64,7 @@
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.section3 .btn-primary:hover {
   background-color: #ffc700;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);

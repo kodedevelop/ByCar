@@ -1,0 +1,23 @@
+@import url('./arquivoBase.css');
+
+/* CSS Home */
+@import url('home/cssCarrosselMarcas/sectionCarrosselMarcas.css');
+@import url('home/cssHero/cssHero.css');
+@import url('home/cssNossosValores/cssNossosValores.css');
+@import url('home/cssSectionNossaHistoria/defaultNossaHistoria.css');
+@import url('home/cssSectionNossosServicos/sectionNossosServicos.css');
+
+/* CSS Página Serviços */
+
+@import url('services/cssServicos/estetica.css');
+@import url('services/cssServicos/funilariaPintura.css');
+@import url('services/cssServicos/peliculaPff.css');
+@import url('services/cssServicos/projetosPersonalizacao.css');
+
+/* CSS Common Layout */
+
+@import url('common/cssContato/defaultContato.css');
+@import url('common/cssContato/keyframesContato.css');
+@import url('common/cssContato/responsividadeContato.css');
+@import url('common/cssFooter/defaultFooter.css');
+@import url('common/cssMenuNavBar/cssMenuNavBar.css');
