@@ -1,3 +1,9 @@
+@import url('../../common/cssContato/keyframesContato.css');
+
+.section3{
+  position: relative;
+}
+
 .section3 .hero-video {
   position: relative;
   height: 75vh;
@@ -68,4 +74,12 @@
   background-color: #ffc700;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+
+/* Pictogramas */
+img#ysHome1{
+  bottom: 30%;
+  left: 5%;
+  animation: ysHome1 9s infinite;
 }
