@@ -1,0 +1,220 @@
+@import url('../arquivoBase.css');
+
+.section-depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-depoimentos {
+  font-family: var(--exo1);
+  font-size: 48px;
+  font-weight: normal;
+  color: var(--preto5);
+  text-align: center;
+}
+
+.titulo-depoimentos-amarelo {
+  font-weight: bold;
+  color: var(--amarelo5);
+}
+
+.cards-container-depoimentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 1200px;
+}
+
+.card-pessoa-depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 370px;
+  background-color: var(--amarelo3);
+  border: 5px solid var(--amarelo5);
+  border-radius: 10px;
+  color: white;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.card-pessoa-depoimentos img{
+  position: absolute;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid var(--amarelo5);
+}
+
+.card-pessoa-depoimentos h3 {
+  margin-top: 55px;
+  font-family: var(--exo1);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card-pessoa-depoimentos p {
+  font-size: 18px;
+  width: 90%;
+  text-align: center;
+  font-family: var(--montserrat);
+  font-weight: 600;
+}
+
+@media (max-width: 319px) {
+  .titulo-depoimentos {
+    font-size: 24px;
+  }
+
+  .cards-container-depoimentos {
+    gap: 10px;
+    margin-top: 0px;
+  }
+
+  .card-pessoa-depoimentos {
+    width: 240px;
+    height: 345px;
+  }
+
+  .card-pessoa-depoimentos img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-pessoa-depoimentos h3 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .card-pessoa-depoimentos p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .titulo-depoimentos {
+    font-size: 26px;
+  }
+
+  .cards-container-depoimentos {
+    gap: 10px;
+    margin-top: 0px;
+  }
+
+  .card-pessoa-depoimentos {
+    width: 300px;
+    height: 295px;
+  }
+
+  .card-pessoa-depoimentos img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-pessoa-depoimentos h3 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .card-pessoa-depoimentos p {
+    font-size: 14px;
+  }
+}
+
+/* 600px - Mobile */
+@media (min-width: 361px) and (max-width: 600px){
+  .titulo-depoimentos {
+    font-size: 30px;
+    max-width: 380px;
+  }
+
+  .cards-container-depoimentos {
+    margin-top: 20px;
+  }
+
+  .card-pessoa-depoimentos {
+    width: 320px;
+    height: 330px;
+  }
+
+  .card-pessoa-depoimentos img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-pessoa-depoimentos h3 {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  .card-pessoa-depoimentos p {
+    font-size: 16px;
+  }
+}
+
+/* 601-949px Mobile Horizontal e Tablet */
+@media (min-width: 601px) and (max-width: 709px) {
+  .titulo-depoimentos {
+    font-size: 34px;
+    max-width: 600px;
+  }
+
+  .card-pessoa-depoimentos {
+    width: 340px;
+    height: 340px;
+  }
+
+  .card-pessoa-depoimentos img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-pessoa-depoimentos h3 {
+    margin-top: 50px;
+    font-size: 19px;
+  }
+
+  .card-pessoa-depoimentos p {
+    font-size: 17px;
+  }
+}
+
+
+@media (min-width: 710px) and (max-width: 949px) {
+  .titulo-depoimentos {
+    font-size: 38px;
+  }
+
+  .card-pessoa-depoimentos {
+    width: 340px;
+    height: 340px;
+  }
+
+  .card-pessoa-depoimentos img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-pessoa-depoimentos h3 {
+    margin-top: 50px;
+    font-size: 19px;
+  }
+
+  .card-pessoa-depoimentos p {
+    font-size: 17px;
+  }
+}
+
+/* 950-1200px Tablet Grande e Pc */
+@media (min-width: 950px) and (max-width: 1200px) {
+  .titulo-depoimentos {
+    font-size: 42px;
+  }
+}
