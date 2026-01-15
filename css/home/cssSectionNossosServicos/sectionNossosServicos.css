@@ -1,11 +1,19 @@
 @import url('../arquivoBase.css');
 
 section.nossos-servicos {
+  position: relative;
   max-width: 1560px;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   gap: 64px;
+}
+
+/* Pictograma */
+img#ysHome2{
+  top: -3%;
+  right: 10%;
+  animation: ysHome2 9s infinite;
 }
 
 .titulo-nossos-servicos {
