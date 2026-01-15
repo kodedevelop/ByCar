@@ -2,7 +2,6 @@
   width: 100%;
   overflow: hidden;
   margin-top: 64px;
-  background: #fff;
   cursor: grab;
   user-select: none;
   touch-action: pan-y;
@@ -23,7 +22,6 @@
 .carousel-track img {
   height: 80px;
   width: auto;
-  filter: grayscale(100%);
   opacity: 0.6;
   transition: filter 0.3s ease, opacity 0.3s ease;
   user-select: none;
@@ -33,7 +31,6 @@
   will-change: transform, filter, opacity;
   backface-visibility: hidden;
 }
-
 
 .carousel-track img:hover {
   filter: grayscale(0%);
