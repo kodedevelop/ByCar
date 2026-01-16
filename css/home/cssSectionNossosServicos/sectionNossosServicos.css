@@ -1,12 +1,13 @@
 @import url('../arquivoBase.css');
 
 section.nossos-servicos {
-  position: relative;
   max-width: 1560px;
+  position: relative;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   gap: 64px;
+  padding-top: 80px;
 }
 
 /* Pictograma */
@@ -36,6 +37,18 @@ img#ysHome2{
   gap: 60px;
   justify-content: center;
 }
+
+.card-link-nossos-servicos {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link-nossos-servicos:focus-visible {
+  outline: 2px solid #f5c400; /* opcional, mas recomendado */
+}
+
 
 .cards-nossos-servicos {
   display: flex;
@@ -86,6 +99,7 @@ img#ysHome2{
   section.nossos-servicos {
     gap: 25px;
   }
+
   .titulo-nossos-servicos {
     font-size: 30px;
     margin-left: 8px;
@@ -161,12 +175,12 @@ img#ysHome2{
 /* 950-1200px Tablet Grande e Pc */
 @media (min-width: 950px) and (max-width: 1200px) {
   section.nossos-servicos {
+    max-width: 900px;
     gap: 40px;
   }
 
   .titulo-nossos-servicos {
     font-size: 48px;
-    margin-left: 29px;
   }
 
   .container-cards-nossos-servicos {
@@ -188,7 +202,11 @@ img#ysHome2{
 }
 
 /* 1200-1550px Pc e variações */
-@media (min-width: 1200px) and (max-width: 1550px) { 
+@media (min-width: 1201px) and (max-width: 1550px) { 
+  section.nossos-servicos {
+    max-width: 1200px;
+  }
+
   .titulo-nossos-servicos {
     margin-left: 90px;
   }
