@@ -8,7 +8,7 @@ export default function initCarrosselMarcas() {
     'windowblue-logo.webp',
   ];
 
-  const logoPath = '../assets/img/marcas/';
+  const logoPath = 'assets/img/marcas/';
   const container = document.getElementById('carousel-container');
   const track = document.getElementById('carousel-track');
 
