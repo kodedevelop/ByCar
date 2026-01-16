@@ -1,6 +1,8 @@
 @import url('../arquivoBase.css');
 
 .section-depoimentos {
+  margin-top: 64px;
+  margin-bottom: 80px;
   position: relative;
   display: flex;
   flex-direction: column;
