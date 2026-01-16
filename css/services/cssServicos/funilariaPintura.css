@@ -72,9 +72,17 @@
 }
 
 .serv-section {
+  position: relative;
   background-color: var(--branco1);
   padding: 60px 20px;
   width: 100%;
+}
+
+/* Pictograma de Estrela */
+img#ysServicoFunilaria1{
+    top: 3%;
+    right: 2%;
+    animation: ysServicoFunilaria1 9s infinite;
 }
 
 .serv-section-aluminio {
