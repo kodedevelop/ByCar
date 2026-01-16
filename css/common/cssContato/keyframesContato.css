@@ -47,3 +47,10 @@ Ex: ysHome1
     75%{right: 10%; top: -8%;}
     100%{right: 3%; top: -10%;}
 }
+
+/* 3a estrela amarela */
+@keyframes ysHome3{
+    0%{left: 3%; top: -5%;}
+    50%{left: 8%; top: 5%;}
+    100%{left: 3%; top: -5%;}
+}
