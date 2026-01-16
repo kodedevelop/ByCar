@@ -62,6 +62,14 @@ Ex: ysHome1
     100%{right: 3%; top: 2%;}
 }
 
+/* 2a estrela amarela */
+@keyframes ysServicoProjPersonalizacao2 {
+    0%{left: 3%; top: 2%;}
+    35%{left: 5%; top: 8%;}
+    70%{left: 1%; top: 5%;}
+    100%{left: 3%; top: 2%;}
+}
+
 
 /* Página CONTATO */
 /* 1a estrela amarela */
