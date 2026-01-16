@@ -77,6 +77,14 @@
   width: 100%;
 }
 
+/* Pictograma de Estrela */
+img#ysServicoProjPersonalizacao1{
+    top: 3%;
+    right: 2%;
+    animation: ysServicoProjPersonalizacao1 9s infinite;
+}
+
+
 .serv-section-aluminio {
   display: grid;
   grid-template-columns: 1fr 1fr;
