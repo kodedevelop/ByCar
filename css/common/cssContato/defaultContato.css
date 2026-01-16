@@ -144,12 +144,12 @@ img.yellow-star{
     z-index: 1;
 }
 
-img#ysContato1{
+img.ysSecContato1{
     top: 5%;
     left: 5%;
     animation: ysContato1 9s infinite;
 }
-img#ysContato2{
+img.ysSecContato2{
     bottom: 3%;
     right: 8%;
     animation: ysContato2 9s infinite;
