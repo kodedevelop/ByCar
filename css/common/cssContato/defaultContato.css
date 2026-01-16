@@ -144,13 +144,13 @@ img.yellow-star{
     z-index: 1;
 }
 
-img.yellow-star:nth-child(2){
+img#ysContato1{
     top: 5%;
     left: 5%;
-    animation: yellow-star1 9s infinite;
+    animation: ysContato1 9s infinite;
 }
-img.yellow-star:nth-child(3){
+img#ysContato2{
     bottom: 3%;
     right: 8%;
-    animation: yellow-star2 9s infinite;
+    animation: ysContato2 9s infinite;
 }

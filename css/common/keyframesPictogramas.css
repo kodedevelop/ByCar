@@ -38,7 +38,7 @@ Ex: ysHome1
 
 /* Página CONTATO */
 /* 1a estrela amarela */
-@keyframes yellow-star1{
+@keyframes ysContato1{
     0%{left: 5%;}
     25%{left: 10%;}
     50%{left: 2%;}
@@ -47,7 +47,7 @@ Ex: ysHome1
 }
 
 /* 2a estrela amarela */
-@keyframes yellow-star2{
+@keyframes ysContato2{
     0%{bottom: 3%;}
     25%{bottom: 12%;}
     50%{right: 18%;}
