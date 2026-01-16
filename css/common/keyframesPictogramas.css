@@ -9,27 +9,7 @@ Ex: ysHome1
 
 */
 
-/* Pápina CONTATO */
-/* 1a estrela amarela */
-@keyframes yellow-star1{
-    0%{left: 5%;}
-    25%{left: 10%;}
-    50%{left: 2%;}
-    75%{top: 20%;}
-    100%{left: 5%;}
-}
-
-/* 2a estrela amarela */
-@keyframes yellow-star2{
-    0%{bottom: 3%;}
-    25%{bottom: 12%;}
-    50%{right: 18%;}
-    75%{right: 5%;}
-    100%{bottom: 3%;}
-}
-
-
-/* Pápina HOME */
+/* Página HOME */
 /* 1a estrela amarela */
 @keyframes ysHome1{
     0%{left: 5%;}
@@ -53,4 +33,24 @@ Ex: ysHome1
     0%{left: 3%; top: -5%;}
     50%{left: 8%; top: 5%;}
     100%{left: 3%; top: -5%;}
+}
+
+
+/* Página CONTATO */
+/* 1a estrela amarela */
+@keyframes yellow-star1{
+    0%{left: 5%;}
+    25%{left: 10%;}
+    50%{left: 2%;}
+    75%{top: 20%;}
+    100%{left: 5%;}
+}
+
+/* 2a estrela amarela */
+@keyframes yellow-star2{
+    0%{bottom: 3%;}
+    25%{bottom: 12%;}
+    50%{right: 18%;}
+    75%{right: 5%;}
+    100%{bottom: 3%;}
 }

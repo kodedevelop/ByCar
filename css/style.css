@@ -18,7 +18,7 @@
 /* CSS Common Layout */
 
 @import url('common/cssContato/defaultContato.css');
-@import url('common/cssContato/keyframesContato.css');
+@import url('common/keyframesPictogramas.css');
 @import url('common/cssContato/responsividadeContato.css');
 @import url('common/cssFooter/defaultFooter.css');
 @import url('common/cssMenuNavBar/cssMenuNavBar.css');
