@@ -84,6 +84,11 @@ img#ysServicoFunilaria1{
     right: 2%;
     animation: ysServicoFunilaria1 9s infinite;
 }
+img#ysServicoFunilaria2{
+    top: 3%;
+    left: 2%;
+    animation: ysServicoFunilaria2 9s infinite;
+}
 
 .serv-section-aluminio {
   display: grid;
