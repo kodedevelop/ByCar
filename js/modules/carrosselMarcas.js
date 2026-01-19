@@ -8,16 +8,20 @@ export default function initCarrosselMarcas() {
     'windowblue-logo.webp',
   ];
 
-  const logoPath = 'assets/img/marcas/';
+  const logoPath = new URL('../../assets/img/marcas/', import.meta.url).href;
+
   const container = document.getElementById('carousel-container');
   const track = document.getElementById('carousel-track');
+
+  if (!container || !track) return;
 
   function renderLogos() {
     for (let i = 0; i < 2; i++) {
       logos.forEach((logo) => {
         const img = document.createElement('img');
+
         img.src = `${logoPath}${logo}`;
-        img.alt = `Logo ${logo.replace('-logo.png', '')}`;
+        img.alt = `Logo ${logo.replace('-logo.webp', '')}`;
         img.draggable = false;
         img.decoding = 'async';
         img.width = 160;
@@ -30,11 +34,7 @@ export default function initCarrosselMarcas() {
 
   renderLogos();
 
-  requestAnimationFrame(() => {
-    container.scrollLeft += 1;
-    container.scrollLeft -= 1;
-    startAutoScroll();
-  });
+  /* ===== Auto scroll ===== */
 
   let isDragging = false;
   let isAutoScrolling = false;
@@ -44,7 +44,7 @@ export default function initCarrosselMarcas() {
   let rafId = null;
 
   let scrollAccumulator = 0;
-  const SCROLL_SPEED = 0.3; // Velocidade
+  const SCROLL_SPEED = 0.3;
 
   function autoScroll() {
     if (!isAutoScrolling) return;
@@ -78,6 +78,15 @@ export default function initCarrosselMarcas() {
     }
   }
 
+  // Inicializa após o render
+  requestAnimationFrame(() => {
+    container.scrollLeft += 1;
+    container.scrollLeft -= 1;
+    startAutoScroll();
+  });
+
+  /* ===== Mouse ===== */
+
   container.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.pageX;
@@ -105,6 +114,8 @@ export default function initCarrosselMarcas() {
     container.classList.remove('dragging');
     startAutoScroll();
   });
+
+  /* ===== Touch ===== */
 
   container.addEventListener('touchstart', (e) => {
     isDragging = true;
