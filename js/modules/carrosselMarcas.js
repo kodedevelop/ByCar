@@ -8,11 +8,18 @@ export default function initCarrosselMarcas() {
     'windowblue-logo.webp',
   ];
 
-  const logoPath = '/ByCar/assets/img/marcas/';
+  // Resolve baseado na localização deste arquivo JS:
+  // js/modules/carrosselMarcas.js -> ../../assets/img/marcas/
+  const logoPath = new URL('../../assets/img/marcas/', import.meta.url).href;
+
   const container = document.getElementById('carousel-container');
   const track = document.getElementById('carousel-track');
 
+  // Não quebra se você reutilizar o JS em páginas sem carrossel
+  if (!container || !track) return;
+
   function renderLogos() {
+    track.innerHTML = ''; // evita duplicar se init rodar por engano
     for (let i = 0; i < 2; i++) {
       logos.forEach((logo) => {
         const img = document.createElement('img');
@@ -20,8 +27,14 @@ export default function initCarrosselMarcas() {
         img.alt = `Logo ${logo.replace('-logo.webp', '')}`;
         img.draggable = false;
         img.decoding = 'async';
+        img.loading = 'lazy';
         img.width = 160;
         img.height = 80;
+
+        // Diagnóstico rápido: se quebrar, você vê no console qual URL foi gerada
+        img.addEventListener('error', () => {
+          console.error('Falha ao carregar logo:', img.src);
+        });
 
         track.appendChild(img);
       });
@@ -30,6 +43,7 @@ export default function initCarrosselMarcas() {
 
   renderLogos();
 
+  // Força layout/scroll inicial (se necessário)
   requestAnimationFrame(() => {
     container.scrollLeft += 1;
     container.scrollLeft -= 1;
@@ -44,7 +58,7 @@ export default function initCarrosselMarcas() {
   let rafId = null;
 
   let scrollAccumulator = 0;
-  const SCROLL_SPEED = 0.3; // Velocidade
+  const SCROLL_SPEED = 0.3;
 
   function autoScroll() {
     if (!isAutoScrolling) return;
@@ -72,12 +86,11 @@ export default function initCarrosselMarcas() {
 
   function stopAutoScroll() {
     isAutoScrolling = false;
-    if (rafId) {
-      cancelAnimationFrame(rafId);
-      rafId = null;
-    }
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = null;
   }
 
+  // Mouse
   container.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.pageX;
@@ -106,13 +119,14 @@ export default function initCarrosselMarcas() {
     startAutoScroll();
   });
 
+  // Touch
   container.addEventListener('touchstart', (e) => {
     isDragging = true;
     startX = e.touches[0].pageX;
     startY = e.touches[0].pageY;
     scrollStart = container.scrollLeft;
     stopAutoScroll();
-  });
+  }, { passive: true });
 
   container.addEventListener('touchmove', (e) => {
     if (!isDragging) return;
@@ -127,7 +141,7 @@ export default function initCarrosselMarcas() {
 
     container.scrollLeft = scrollStart - deltaX * 1.5;
     e.preventDefault();
-  });
+  }, { passive: false });
 
   container.addEventListener('touchend', () => {
     if (!isDragging) return;
@@ -135,5 +149,3 @@ export default function initCarrosselMarcas() {
     startAutoScroll();
   });
 }
-
-initCarrosselMarcas();
