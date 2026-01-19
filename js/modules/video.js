@@ -1,6 +1,6 @@
 export function initVideoBackground() {
-  const video = document.querySelector('.section2-video');
-  const placeholder = document.querySelector('.section2-placeholder');
+  const video = document.querySelector('.section3 .hero-video-bg');
+  const placeholder = document.querySelector('.section3 .hero-video-placeholder');
 
   if (!video || !placeholder) {
     console.warn('Vídeo ou placeholder não encontrado');
@@ -10,10 +10,15 @@ export function initVideoBackground() {
   // força carregamento
   video.load();
 
-  video.addEventListener('loadeddata', () => {
-    video.play().catch(() => {});
-    placeholder.style.display = 'none';
+  video.addEventListener('canplaythrough', () => {
     video.style.display = 'block';
+    placeholder.style.opacity = '0';
+
+    setTimeout(() => {
+      placeholder.style.display = 'none';
+    }, 400);
+
+    video.play().catch(() => {});
   });
 
   video.addEventListener('error', () => {

@@ -1,4 +1,4 @@
-@import url(../arquivoBase.css);
+@import url("../../arquivoBase.css");
 
 .serv-header {
   background-color: var(--preto5);
@@ -15,7 +15,7 @@
   right: 40px;
   width: 60px;
   height: 60px;
-  background-image: url('../../assets/icons/deco.svg');
+  background-image: url('../../../assets/icons/deco.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
