@@ -1,6 +1,6 @@
 @import url("../../arquivoBase.css");
 
-.serv-header {
+.serv-title1 {
   background-color: var(--preto5);
   color: var(--branco1);
   padding: 40px 20px;
@@ -8,20 +8,20 @@
   position: relative;
 }
 
-.serv-header::before {
+.serv-title1::before {
   content: "";
   position: absolute;
   top: 40px;
   right: 40px;
   width: 60px;
   height: 60px;
-  background-image: url('../../assets/icons/deco.svg');
+  background-image: url('../../../assets/icons/deco.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.serv-header-content {
+.serv-title1-content {
   max-width: 1200px;
   margin: 0;
   padding: 0 40px;
@@ -57,7 +57,7 @@
   font-style: normal;
 }
 
-.serv-header-description {
+.serv-title1-description {
   font-size: 15px;
   line-height: 1.8;
   color: var(--branco2);
@@ -182,18 +182,18 @@ img#ysServicoFunilaria2{
 }
 
 @media (max-width: 768px) {
-  .serv-header {
+  .serv-title1 {
     padding: 40px 20px;
   }
 
-  .serv-header::before {
+  .serv-title1::before {
     width: 60px;
     height: 60px;
     right: 20px;
     top: 20px;
   }
 
-  .serv-header-content {
+  .serv-title1-content {
     padding: 0 20px;
   }
 
@@ -210,7 +210,7 @@ img#ysServicoFunilaria2{
     width: 25px;
   }
 
-  .serv-header-description {
+  .serv-title1-description {
     font-size: 14px;
   }
 
