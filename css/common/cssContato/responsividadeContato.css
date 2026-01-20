@@ -1,4 +1,4 @@
-@import url('../arquivoBase.css');
+@import url('../../arquivoBase.css');
 
 /* Telas com 445px - 565px*/
 @media screen and (min-width: 445px) and (max-width: 565px){
