@@ -1,4 +1,4 @@
-@import url(../arquivoBase.css);
+@import url('../../arquivoBase.css');
 
 body {
   color: var(--branco1);
