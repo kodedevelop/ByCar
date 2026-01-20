@@ -60,7 +60,10 @@
   font-size: 15px;
   line-height: 1.8;
   color: var(--branco2);
-  max-width: 900px;
+}
+
+.serv-header-description p{
+ margin-bottom: 20px;
 }
 
 .serv-content-wrapper {
