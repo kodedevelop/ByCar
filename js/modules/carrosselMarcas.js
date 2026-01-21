@@ -44,7 +44,7 @@ export default function initCarrosselMarcas() {
   let rafId = null;
 
   let scrollAccumulator = 0;
-  const SCROLL_SPEED = 0.3; // Velocidade
+  const SCROLL_SPEED = 0.5; // Velocidade
 
   function autoScroll() {
     if (!isAutoScrolling) return;
