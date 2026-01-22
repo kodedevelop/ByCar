@@ -8,10 +8,11 @@ section.nossos-servicos {
   flex-direction: column;
   gap: 64px;
   padding-top: 80px;
+  box-sizing: border-box;
 }
 
 /* Pictograma */
-img#ysHome2{
+img#ysHome2 {
   top: -3%;
   right: 10%;
   animation: ysHome2 9s infinite;
@@ -36,6 +37,7 @@ img#ysHome2{
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .card-link-nossos-servicos {
@@ -46,9 +48,9 @@ img#ysHome2{
 }
 
 .card-link-nossos-servicos:focus-visible {
-  outline: 2px solid #f5c400; /* opcional, mas recomendado */
+  outline: 2px solid #f5c400;
+  outline-offset: 4px;
 }
-
 
 .cards-nossos-servicos {
   display: flex;
@@ -57,26 +59,36 @@ img#ysHome2{
   justify-content: center;
   width: 477px;
   height: 300px;
-  border: 4px solid var(--amarelo2);
-  border-radius: 8px;
+  border: 4px solid var(--amarelo4);
+  border-radius: 12px;
   padding: 20px;
-  gap: 10px;
+  gap: 12px;
+  background-color: var(--preto4);
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cards-nossos-servicos:hover {
+  box-shadow: 0 0 15px var(--amarelo3);
+  transform: translateY(-10px);
+}
+
+.cards-nossos-servicos img {
+  display: block;
+  width: clamp(88px, 12vw, 160px);
+  height: clamp(88px, 12vw, 160px);
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .cards-nossos-servicos h3 {
   text-align: center;
   font-size: 31px;
   font-weight: 600;
-  color: var(--preto4);
-}
-
-.cards-nossos-servicos p {
-  color: var(--preto4);
-  max-width: 430px;
-  font-size: 22px;
-  text-align: center;
-  font-family: var(--montserrat);
-  font-weight: normal;
+  color: var(--amarelo4);
 }
 
 .titulo-servico {
@@ -90,7 +102,7 @@ img#ysHome2{
   content: "";
   width: 19px;
   height: 19px;
-  background: url("../../../assets/icons/arrow-up-right-black.svg") no-repeat center;
+  background: url("../../../assets/icons/arrow-up-right-yellow.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -106,14 +118,25 @@ img#ysHome2{
   }
 
   .container-cards-nossos-servicos {
-    gap: 30px;
+    flex-direction: column;     
+    align-items: center;        
+  }
+
+  .card-link-nossos-servicos {
+    width: 100%;                
+    display: flex;              
+    justify-content: center;
   }
 
   .cards-nossos-servicos {
-    width: 95%;
-    height: auto;
-    margin: 0px 8px 0px 8px;
-    gap: 5px;
+    max-width: 95%;
+    height: 240px;
+    margin: 0 8px;
+  }
+
+  .cards-nossos-servicos img {
+    width: 110px;
+    height: 110px;
   }
 
   .cards-nossos-servicos h3 {
@@ -123,23 +146,6 @@ img#ysHome2{
   .titulo-servico::after {
     width: 14px;
     height: 14px;
-  }
-
-  .cards-nossos-servicos p {
-    max-width: 600px;
-    font-size: 15px;
-  }
-
-  .cards-nossos-servicos img {
-    width: 20px;
-  }
-
-  .cards-nossos-servicos:nth-child(2) img {
-    fill: var(--preto5);
-  }
-
-  .cards-nossos-servicos:nth-child(even) img {
-    fill: var(--amarelo5);
   }
 }
 
@@ -151,24 +157,32 @@ img#ysHome2{
 
   .titulo-nossos-servicos {
     font-size: 42px;
-    margin-left: 20px;
+    margin-left: 18px;
   }
 
   .container-cards-nossos-servicos {
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-link-nossos-servicos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .cards-nossos-servicos {
     width: 95%;
-    height: 200px;
+    height: 280px;
+  }
+
+  .cards-nossos-servicos img {
+    width: 140px;
+    height: 140px;
   }
 
   .cards-nossos-servicos h3 {
     font-size: 28px;
-  }
-
-  .cards-nossos-servicos p {
-    font-size: 19px;
   }
 }
 
@@ -192,17 +206,18 @@ img#ysHome2{
     height: 240px;
   }
 
-  .cards-nossos-servicos h3 {
-    font-size: 28px;
+  .cards-nossos-servicos img {
+    width: 150px;
+    height: 150px;
   }
 
-  .cards-nossos-servicos p {
-    font-size: 19px;
+  .cards-nossos-servicos h3 {
+    font-size: 28px;
   }
 }
 
 /* 1200-1550px Pc e variações */
-@media (min-width: 1201px) and (max-width: 1550px) { 
+@media (min-width: 1201px) and (max-width: 1550px) {
   section.nossos-servicos {
     max-width: 1200px;
   }
