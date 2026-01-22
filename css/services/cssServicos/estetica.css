@@ -72,9 +72,32 @@
 }
 
 .serv-section {
+  position: relative;
   background-color: var(--branco1);
   padding: 60px 20px;
   width: 100%;
+}
+
+/* Pictograma de Estrela */
+img#ysServicoEstetica1{
+    top: 3%;
+    right: 2%;
+    animation: ysServicoEstetica1 9s infinite;
+}
+img#ysServicoEstetica2{
+  top: 3%;
+  left: 2%;
+  animation: ysServicoEstetica2 9s infinite;
+}
+img#ysServicoEstetica3{
+    top: 3%;
+    right: 2%;
+    animation: ysServicoEstetica3 9s infinite;
+}
+img#ysServicoEstetica4{
+    bottom: 30%;
+    right: 2%;
+    animation: ysServicoEstetica4 9s infinite;
 }
 
 .serv-section-aluminio {

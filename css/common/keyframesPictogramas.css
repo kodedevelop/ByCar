@@ -36,6 +36,40 @@ Ex: ysHome1
 }
 
 
+/* Página SERVIÇOS - Estética Automotiva */
+/* 1a estrela amarela */
+@keyframes ysServicoEstetica1 {
+    0%{right: 3%; top: 2%;}
+    35%{right: 8%; top: 8%;}
+    70%{right: 5%; top: 8%;}
+    100%{right: 3%; top: 2%;}
+}
+
+/* 2a estrela amarela */
+@keyframes ysServicoEstetica2 {
+    0%{left: 3%; top: 2%;}
+    35%{left: 6%; top: 8%;}
+    70%{left: 1%; top: 12%;}
+    100%{left: 3%; top: 2%;}
+}
+
+/* 3a estrela amarela */
+@keyframes ysServicoEstetica3 {
+    0%{right: 3%; top: 2%;}
+    35%{right: 8%; top: 8%;}
+    70%{right: 5%; top: 8%;}
+    100%{right: 3%; top: 2%;}
+}
+
+/* 4a estrela amarela */
+@keyframes ysServicoEstetica4 {
+    0%{right: 3%; bottom: 30%;}
+    35%{right: 10%; bottom: 38%;}
+    70%{right: 8%; bottom: 20%;}
+    100%{right: 3%; bottom: 30%;}
+}
+
+
 /* Página SERVIÇOS - FUNILARIA */
 /* 1a estrela amarela */
 @keyframes ysServicoFunilaria1 {
