@@ -69,7 +69,6 @@ Ex: ysHome1
     100%{right: 3%; bottom: 30%;}
 }
 
-
 /* Página SERVIÇOS - FUNILARIA */
 /* 1a estrela amarela */
 @keyframes ysServicoFunilaria1 {
@@ -85,6 +84,15 @@ Ex: ysHome1
     35%{left: 6%; top: 8%;}
     70%{left: 1%; top: 12%;}
     100%{left: 3%; top: 2%;}
+}
+
+/* Página SERVIÇOS - Estética Automotiva */
+/* 1a estrela amarela */
+@keyframes ysServicoPelicula1 {
+    0%{right: 3%; top: 0%;}
+    35%{right: 8%; top: 5%;}
+    70%{right: 1%; top: 3%;}
+    100%{right: 3%; top: 0%;}
 }
 
 /* Página SERVIÇOS - PROJETOS E PERSONALIZAÇÕES */
