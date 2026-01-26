@@ -13,9 +13,12 @@
 
     <!-- JS -->
     <script src="js/modules/mensagemWhats.js" defer></script>
+    <!-- Máscara do form -->
     <script src="js/modules/mascaraForm.js"   defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <!-- API do reCAPTCH do form -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Bootstap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -94,7 +97,7 @@
                 <p id="contatoTexto">Quer falar sobre algum serviço? Preencha o formulário abaixo e <b>Entre em Contato!</b></p>
 
                 <!-- Formulário -->
-                <form>
+                <form method="post">
                     <!-- Nome -->
                     <input class="camposForm" id="nome" type="text" maxlength="40" placeholder="Digite seu nome" required>
 
@@ -104,8 +107,11 @@
                     <!-- Mensagem -->
                     <textarea class="camposForm" id="mensagem" maxlength="256" placeholder="Digite sua mensagem aqui" required></textarea>
 
+                    <!-- reCAPTCHA -->
+                    <div class="g-recaptcha" data-sitekey="6Ldq61YsAAAAANfZy_HWn5agaP-aSTFZ0MCn2auV"></div>
+
                     <!-- Button -->
-                    <button id="enviarForm" >ENVIAR MENSAGEM <i class="bi bi-arrow-right"></i></button>
+                    <button id="enviarForm">ENVIAR MENSAGEM<i class="bi bi-arrow-right"></i></button>
                 </form>
             </div>
 

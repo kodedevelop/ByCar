@@ -1,45 +1,21 @@
-// Botão para Enviar Formulário
-let enviarForm = document.querySelector('#enviarForm');
-enviarForm.addEventListener('click', ()=> { enviarParaWhatsApp(); })
+const formulario = document.querySelector('form');
 
-// Bloquear se o form for enviado com algum campo vazio
-function verificarForm() {
-    let campos = document.querySelectorAll(".camposForm");
-    let preenchido = true;
+// Verificação e envio dos dados do 
+formulario.addEventListener('submit', function(event) {
+    // Método para pegar a resposta (o token) do reCAPTCHA que é enviado. Se tivesse um back-end, seria esse token que seria enviado para o back-end.
+    const captchaResponse = grecaptcha.getResponse();
 
-    // Verifica se todos os campos estão preenchidos
-    campos.forEach(campo => {
-        if (!campo.value.trim()) {
-            preenchido = false;
-        }
-    });
+    // Verifica se a resposta está vazia
+    if (captchaResponse.length === 0) {
+        event.preventDefault(); // Impede o envio
 
-    if (!preenchido) {
-        document.getElementById("form-mensagemErro").style.display = "block";
-        return; // Impede o envio
-    }
+        alert("Por favor, preencha o reCAPTCHA!"); // Informa para preencher o reCAPTCHA
+        return;
+    } else { enviarParaWhatsApp(); }
+});
 
-    document.getElementById("form-mensagemErro").style.display = "none"; // Esconde a mensagem de erro
-
-    enviarParaWhatsApp();
-}
-
-// Enviando para o WhatsApp (Formulário)
+// Função para enviar mensagem para o WhatsApp
 function enviarParaWhatsApp() {
-    let campos = document.querySelectorAll(".camposForm");
-    let preenchido = true;
-
-    // Verifica se todos os campos estão preenchidos
-    campos.forEach(campo => {
-        if (!campo.value.trim()) {
-            preenchido = false;
-        }
-    });
-
-    if (!preenchido) {
-        return; // Impede o envio
-    }
-
     let nome     = document.getElementById("nome").value.trim();
     let celular  = document.getElementById("celular").value.trim();
     let mensagem = document.getElementById("mensagem").value.trim();
