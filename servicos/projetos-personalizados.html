@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS -->
+    <!-- API do reCAPTCH do form -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
@@ -220,18 +224,21 @@
           <p id="contatoTexto">Quer falar sobre algum serviço? Preencha o formulário abaixo e <b>Entre em Contato!</b></p>
 
           <!-- Formulário -->
-          <form action="#">
+          <form method="post">
             <!-- Nome -->
-            <input type="text" maxlength="40" placeholder="Digite seu nome" required>
+            <input class="camposForm" id="nome" type="text" maxlength="40" placeholder="Digite seu nome" required>
 
             <!-- Celular -->
-            <input id="celular" type="text" placeholder="Digite seu número de whatsapp" required>
+            <input class="camposForm" id="celular" type="text" placeholder="Digite seu número de whatsapp" required>
 
             <!-- Mensagem -->
-            <textarea maxlength="256" placeholder="Digite sua mensagem aqui" required></textarea>
+            <textarea class="camposForm" id="mensagem" maxlength="256" placeholder="Digite sua mensagem aqui" required></textarea>
+
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6Ldq61YsAAAAANfZy_HWn5agaP-aSTFZ0MCn2auV"></div>
 
             <!-- Button -->
-            <button id="enviarForm">ENVIAR MENSAGEM <i class="bi bi-arrow-right"></i></button>
+            <button id="enviarForm">ENVIAR MENSAGEM<i class="bi bi-arrow-right"></i></button>
           </form>
         </div>
 
