@@ -29,10 +29,13 @@
 
     textarea{ height: 120px; }
 
+    /* reCAPTCHA */
+    div.reCAPTCHA{ width: 62%; }
+
     button#enviarForm{ font-size: 18px; }
 }
 
-/* Telas com 250px - 429px */
+/* Telas com ...px - 429px */
 @media screen and (max-width: 429px){
     /* - Main */
     /* -- Faixa Preta */
@@ -56,9 +59,7 @@
 
 
     /* -- Section - Contato */
-    section#contato{
-        padding: 30px 20px;
-    }
+    section#contato{ padding: 30px 20px; }
 
     div.contatoContainer{ max-width: 320px; }
 
@@ -72,6 +73,9 @@
     input::placeholder, textarea::placeholder{ font-size: 15px; }
 
     textarea{ height: 120px; }
+
+    /* reCAPTCHA */
+    div.reCAPTCHA{ transform: scale(1.2); }
 
     button#enviarForm{ font-size: 15px; }
 
