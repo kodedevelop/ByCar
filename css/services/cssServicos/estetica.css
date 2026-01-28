@@ -23,7 +23,7 @@
 
 .serv-title1-content {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 40px;
 }
 
@@ -68,13 +68,12 @@
   margin: 0 auto;
   padding: 0 20px;
   text-align: left;
-  
 }
 
 .serv-section {
   position: relative;
   background-color: var(--branco1);
-  padding: 60px 20px;
+  padding: 60px 40px;
   width: 100%;
 }
 
@@ -165,7 +164,7 @@ img#ysServicoEstetica4{
 .serv-section-convencional {
   background-color: var(--preto5);
   color: var(--branco1);
-  padding: 60px 20px;
+  padding: 60px 40px;
   width: 100%;
 }
 
@@ -192,16 +191,185 @@ img#ysServicoEstetica4{
   border-radius: 8px;
 }
 
+/* Carrossel de Marcas - Full Width com Drag */
+.carousel-wrapper {
+  background-color: var(--branco1);
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--preto3);
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+  min-height: 200px;
+  cursor: grab;
+  user-select: none;
+}
+
+#carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: fit-content;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+.carousel-track.slow-motion {
+  transition: transform 0.3s ease-out;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  width: 300px;
+  user-select: none;
+  min-width: 140px;
+}
+
+.carousel-item img {
+  height: 120px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+
+.carousel-item-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--preto5);
+  text-align: center;
+  line-height: 1.3;
+  max-width: 140px;
+  word-wrap: break-word;
+}
+
+/* =========================================================
+   TABLETS GRANDES / NOTEBOOKS PEQUENOS (≤ 1024px)
+   ========================================================= */
+@media (max-width: 1024px) {
+  .carousel-track {
+    gap: 28px;
+  }
+
+  .carousel-item {
+    width: 260px;
+  }
+
+  .carousel-item img {
+    height: 100px;
+    max-width: 100px;
+  }
+
+  .carousel-item-name {
+    font-size: 13px;
+  }
+
+  .serv-section,
+  .serv-section-convencional {
+    padding: 50px 30px;
+  }
+
+  .carousel-title {
+    padding: 0 30px;
+  }
+}
+
+/* =========================================================
+   TABLETS E MOBILE MÉDIO (≤ 768px)
+   ========================================================= */
 @media (max-width: 768px) {
+  /* ===== CARROSSEL ===== */
+  .carousel-container {
+    padding: 0 16px;
+    min-height: 140px;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+  }
+
+  .carousel-container.dragging {
+    cursor: grabbing;
+  }
+
+  .carousel-track {
+    gap: 18px;
+    align-items: center;
+    transition: none;
+    will-change: auto;
+  }
+
+  .carousel-item {
+    width: clamp(140px, 42vw, 200px);
+    min-width: unset;
+    gap: 12px;
+  }
+
+  .carousel-item img {
+    height: clamp(56px, 12vw, 84px);
+    max-width: clamp(72px, 18vw, 110px);
+  }
+
+  .carousel-item-name {
+    font-size: 12px;
+    max-width: 100%;
+    padding: 0 6px;
+    line-height: 1.3;
+  }
+
+  .carousel-title {
+    font-size: 18px;
+    margin-bottom: 24px;
+    padding: 0 20px;
+  }
+
+  /* ===== TÍTULO / HEADER ===== */
   .serv-title1 {
     padding: 40px 20px;
   }
 
   .serv-title1::before {
-    width: 60px;
-    height: 60px;
-    right: 20px;
-    top: 20px;
+    width: 48px;
+    height: 48px;
+    top: 16px;
+    right: 16px;
   }
 
   .serv-title1-content {
@@ -218,11 +386,17 @@ img#ysServicoEstetica4{
   }
 
   .serv-yellow-line {
-    width: 25px;
+    width: 24px;
   }
 
   .serv-title1-description {
     font-size: 14px;
+  }
+
+  /* ===== SEÇÕES ===== */
+  .serv-section,
+  .serv-section-convencional {
+    padding: 40px 20px;
   }
 
   .serv-section-title {
@@ -233,9 +407,23 @@ img#ysServicoEstetica4{
     font-size: 15px;
   }
 
+  /* ===== GRID → COLUNA ===== */
   .serv-section-aluminio,
   .serv-section-convencional-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Ordem correta no mobile */
+  .serv-section-aluminio > div,
+  .serv-section-convencional-content > div {
+    order: 1;
+  }
+
+  .serv-section-aluminio figure,
+  .serv-section-convencional-content figure {
+    order: 2;
   }
 
   .serv-btn-orcamento {
@@ -243,31 +431,53 @@ img#ysServicoEstetica4{
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  /* Corrigindo a ordem para mobile: texto, botão, imagem */
-  .serv-section-aluminio {
-    display: flex;
-    flex-direction: column;
+/* =========================================================
+   MOBILE PEQUENO (≤ 480px)
+   ========================================================= */
+@media (max-width: 480px) {
+  /* ===== CARROSSEL ===== */
+  .carousel-container {
+    padding: 0 12px;
+    min-height: 120px;
   }
 
-  .serv-section-aluminio figure {
-    order: 2;
+  .carousel-track {
+    gap: 14px;
   }
 
-  .serv-section-aluminio > div {
-    order: 1;
+  .carousel-item {
+    width: clamp(130px, 48vw, 180px);
+    gap: 10px;
   }
 
-  .serv-section-convencional-content {
-    display: flex;
-    flex-direction: column;
+  .carousel-item img {
+    height: clamp(52px, 14vw, 76px);
+    max-width: clamp(68px, 22vw, 96px);
   }
 
-  .serv-section-convencional-content > div {
-    order: 1;
+  .carousel-item-name {
+    font-size: 11px;
+    line-height: 1.25;
   }
 
-  .serv-section-convencional-content figure {
-    order: 2;
+  .carousel-title {
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding: 0 16px;
+  }
+
+  /* ===== TEXTOS ===== */
+  .serv-service-title {
+    font-size: 22px;
+  }
+
+  .serv-section-title {
+    font-size: 20px;
+  }
+
+  .serv-section-text {
+    font-size: 14px;
   }
 }
