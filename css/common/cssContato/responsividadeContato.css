@@ -75,7 +75,10 @@
     textarea{ height: 120px; }
 
     /* reCAPTCHA */
-    div.reCAPTCHA{ transform: scale(1.2); }
+    div.reCAPTCHA{ 
+        width: 82%;
+        transform: scale(1.1);
+    }
 
     button#enviarForm{ font-size: 15px; }
 
