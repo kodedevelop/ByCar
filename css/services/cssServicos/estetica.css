@@ -70,11 +70,11 @@
   text-align: left;
 }
 
-.serv-section {
+.serv-section section{
   position: relative;
-  background-color: var(--branco1);
   padding: 60px 40px;
   width: 100%;
+  background-color: var(--branco2);
 }
 
 /* Pictograma de Estrela */
@@ -193,7 +193,7 @@ img#ysServicoEstetica4{
 
 /* Carrossel de Marcas - Full Width com Drag */
 .carousel-wrapper {
-  background-color: var(--branco1);
+  background-color: var(--branco2);
   width: 100%;
   overflow: hidden;
 }
