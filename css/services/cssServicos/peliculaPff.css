@@ -1,5 +1,9 @@
 @import url("../../arquivoBase.css");
 
+.serv-title1-description p {
+  margin-bottom: 20px;
+}
+
 /* Seção Window Blue */
 .serv-section-windowblue {
   background-color: var(--branco1);
