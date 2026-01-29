@@ -30,7 +30,10 @@
     textarea{ height: 120px; }
 
     /* reCAPTCHA */
-    div.reCAPTCHA{ width: 62%; }
+    div.reCAPTCHA{ 
+        width: 83%;
+        scale: 0.9;
+    }
 
     button#enviarForm{ font-size: 18px; }
 }
@@ -74,13 +77,18 @@
 
     textarea{ height: 120px; }
 
-    /* reCAPTCHA */
-    div.reCAPTCHA{ 
-        width: 82%;
-        transform: scale(1.1);
-    }
-
     button#enviarForm{ font-size: 15px; }
 
     button#enviarForm > i{ margin-left: 10px; }
+}
+
+
+
+/* Telas com ...px - 444px */
+@media screen and (max-width: 444px){
+    /* reCAPTCHA */ 
+    div.reCAPTCHA{ 
+        width: auto;
+        transform: scale(0.9);
+    }
 }
