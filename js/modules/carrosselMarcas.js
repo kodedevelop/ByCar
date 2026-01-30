@@ -11,6 +11,11 @@ export default function initCarrosselMarcas() {
   const logoPath = 'assets/img/marcas/';
   const container = document.getElementById('carousel-container');
   const track = document.getElementById('carousel-track');
+  
+if (!container || !track) {
+  // Esta página não tem o carrossel de marcas
+  return;
+}
 
   function renderLogos() {
     for (let i = 0; i < 2; i++) {

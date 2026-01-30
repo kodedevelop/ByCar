@@ -1,4 +1,5 @@
-function initCarrosselEstetica() {
+export default function initCarrosselEstetica() {
+  console.log('🎠 Inicializando carrossel de estética...');
   const produtos = [
     { imagem: 'ceramic-pro-leather.png', nome: 'CERAMIC PRO LEATHER' },
     { imagem: 'ceramic-pro-glass.png', nome: 'CERAMIC PRO GLASS' },
@@ -6,15 +7,16 @@ function initCarrosselEstetica() {
     { imagem: 'ceramic-pro-textile.png', nome: 'CERAMIC PRO TEXTILE & CALIPER' }
   ];
 
-  const imagePath = '../assets/img/produtos/';
-  const container = document.getElementById('carousel-container');
-  const track = document.getElementById('carousel-track');
+  const imagePath = '/assets/img/produtos/';
+  const container = document.getElementById('est-carousel-container');
+  const track = document.getElementById('est-carousel-track');
 
   if (!container || !track) {
     console.warn('Elementos do carrossel não encontrados');
     return;
   }
 
+  console.log('✅ Elementos do carrossel encontrados');
   // =========================
   // RTL normalization (robusto)
   // =========================
@@ -90,7 +92,7 @@ function initCarrosselEstetica() {
 
   function createItem(produto) {
     const item = document.createElement('div');
-    item.className = 'carousel-item';
+    item.className = 'est-carousel-item';
 
     const img = document.createElement('img');
     img.src = imagePath + produto.imagem;
@@ -100,7 +102,7 @@ function initCarrosselEstetica() {
     img.loading = 'eager';
 
     const nome = document.createElement('div');
-    nome.className = 'carousel-item-name';
+    nome.className = 'est-carousel-item-name';
     nome.textContent = produto.nome;
 
     item.append(img, nome);
@@ -301,11 +303,4 @@ function initCarrosselEstetica() {
     if (document.hidden) stopAuto();
     else startAuto();
   });
-}
-
-// garante que roda após o HTML existir
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initCarrosselEstetica);
-} else {
-  initCarrosselEstetica();
 }

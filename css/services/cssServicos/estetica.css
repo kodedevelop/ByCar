@@ -1,5 +1,8 @@
 @import url("../../arquivoBase.css");
 
+/* =========================================================
+   HEADER / TÍTULO
+   ========================================================= */
 .serv-title1 {
   background-color: var(--preto5);
   color: var(--branco1);
@@ -15,7 +18,7 @@
   right: 40px;
   width: 60px;
   height: 60px;
-  background-image: url('../../../assets/icons/deco.svg');
+  background-image: url("../../../assets/icons/deco.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,6 +66,9 @@
   color: var(--branco2);
 }
 
+/* =========================================================
+   CONTEÚDO / SEÇÕES
+   ========================================================= */
 .serv-content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -70,33 +76,34 @@
   text-align: left;
 }
 
-.serv-section section{
+/* ✅ Correção: a SECTION já tem a classe .serv-section no HTML */
+.serv-section {
   position: relative;
   padding: 60px 40px;
   width: 100%;
   background-color: var(--branco2);
 }
 
-/* Pictograma de Estrela */
-img#ysServicoEstetica1{
-    top: 3%;
-    right: 2%;
-    animation: ysServicoEstetica1 9s infinite;
+/* Pictograma de Estrela (posicionamento/anim já devem existir no base) */
+img#ysServicoEstetica1 {
+  top: 3%;
+  right: 2%;
+  animation: ysServicoEstetica1 9s infinite;
 }
-img#ysServicoEstetica2{
+img#ysServicoEstetica2 {
   top: 3%;
   left: 2%;
   animation: ysServicoEstetica2 9s infinite;
 }
-img#ysServicoEstetica3{
-    top: 3%;
-    right: 2%;
-    animation: ysServicoEstetica3 9s infinite;
+img#ysServicoEstetica3 {
+  top: 3%;
+  right: 2%;
+  animation: ysServicoEstetica3 9s infinite;
 }
-img#ysServicoEstetica4{
-    bottom: 30%;
-    right: 2%;
-    animation: ysServicoEstetica4 9s infinite;
+img#ysServicoEstetica4 {
+  bottom: 30%;
+  right: 2%;
+  animation: ysServicoEstetica4 9s infinite;
 }
 
 .serv-section-aluminio {
@@ -161,6 +168,7 @@ img#ysServicoEstetica4{
   border-radius: 8px;
 }
 
+/* Seções “convencional” (fundo escuro) */
 .serv-section-convencional {
   background-color: var(--preto5);
   color: var(--branco1);
@@ -191,71 +199,89 @@ img#ysServicoEstetica4{
   border-radius: 8px;
 }
 
-/* Carrossel de Marcas - Full Width com Drag */
-.carousel-wrapper {
+/* =========================================================
+   CARROSSEL (Estética Automotiva) — AGORA EDGE-TO-EDGE
+   ========================================================= */
+/* ✅ Sem max-width e sem padding lateral: vai de canto a canto */
+.est-carousel-wrapper {
   background-color: var(--branco2);
   width: 100%;
   overflow: hidden;
+  margin: 50px 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.carousel-title {
+/* Título pode continuar alinhado ao conteúdo (não precisa ser edge-to-edge) */
+.est-carousel-title {
   text-align: left;
   font-size: 20px;
   font-weight: 600;
   color: var(--preto3);
-  margin-bottom: 40px;
+
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 48px auto; /* ✅ mais espaço do texto para o carrossel */
+
   padding: 0 40px;
 }
 
-.carousel-container {
+.est-carousel-container {
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   position: relative;
+
+  /* ✅ carrossel em si edge-to-edge */
+  max-width: none;
+  margin: 0;
+  padding: 18px 0 6px 0; /* ✅ afasta os itens do texto (top) */
   min-height: 200px;
+
   cursor: grab;
   user-select: none;
 }
 
-#carousel-container::-webkit-scrollbar {
+#est-carousel-container::-webkit-scrollbar {
   display: none;
 }
 
-.carousel-container.dragging {
+.est-carousel-container.dragging {
   cursor: grabbing;
   scroll-behavior: auto;
 }
 
-.carousel-track {
+.est-carousel-track {
   display: flex;
   align-items: flex-start;
   gap: 40px;
   width: fit-content;
   will-change: transform;
   transition: transform 0.1s linear;
+
+  /* ✅ “respiro” nas pontas sem limitar largura */
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
-.carousel-track.slow-motion {
+.est-carousel-track.slow-motion {
   transition: transform 0.3s ease-out;
 }
 
-.carousel-item {
+.est-carousel-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   flex-shrink: 0;
+
   width: 300px;
   user-select: none;
   min-width: 140px;
 }
 
-.carousel-item img {
+.est-carousel-item img {
   height: 120px;
   width: auto;
   max-width: 120px;
@@ -267,11 +293,11 @@ img#ysServicoEstetica4{
   opacity: 1;
 }
 
-.carousel-item:hover img {
+.est-carousel-item:hover img {
   transform: scale(1.05);
 }
 
-.carousel-item-name {
+.est-carousel-item-name {
   font-size: 14px;
   font-weight: 500;
   color: var(--preto5);
@@ -282,23 +308,57 @@ img#ysServicoEstetica4{
 }
 
 /* =========================================================
-   TABLETS GRANDES / NOTEBOOKS PEQUENOS (≤ 1024px)
+   DESKTOP MENOR / NOTEBOOKS (≤ 1280px)
    ========================================================= */
-@media (max-width: 1024px) {
-  .carousel-track {
+@media (max-width: 1280px) {
+  .serv-title1-content {
+    padding: 0 24px;
+  }
+
+  .serv-section,
+  .serv-section-convencional {
+    padding: 56px 24px;
+  }
+
+  .serv-section-aluminio,
+  .serv-section-convencional-content {
     gap: 28px;
   }
 
-  .carousel-item {
+  .est-carousel-title {
+    padding: 0 24px;
+    margin-bottom: 44px;
+  }
+
+  .est-carousel-container {
+    padding-top: 18px; /* mantém afastamento do texto */
+  }
+
+  .est-carousel-track {
+    padding: 0 20px;
+    gap: 34px;
+  }
+}
+
+/* =========================================================
+   TABLETS GRANDES / NOTEBOOKS PEQUENOS (≤ 1024px)
+   ========================================================= */
+@media (max-width: 1024px) {
+  .est-carousel-track {
+    gap: 28px;
+    padding: 0 18px;
+  }
+
+  .est-carousel-item {
     width: 260px;
   }
 
-  .carousel-item img {
+  .est-carousel-item img {
     height: 100px;
     max-width: 100px;
   }
 
-  .carousel-item-name {
+  .est-carousel-item-name {
     font-size: 13px;
   }
 
@@ -307,8 +367,17 @@ img#ysServicoEstetica4{
     padding: 50px 30px;
   }
 
-  .carousel-title {
+  .serv-title1-content {
     padding: 0 30px;
+  }
+
+  .est-carousel-title {
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+
+  .est-carousel-container {
+    padding-top: 18px;
   }
 }
 
@@ -316,48 +385,57 @@ img#ysServicoEstetica4{
    TABLETS E MOBILE MÉDIO (≤ 768px)
    ========================================================= */
 @media (max-width: 768px) {
+  /* wrapper sem padding extra */
+  .est-carousel-wrapper {
+    padding: 0;
+    margin: 32px 0;
+  }
+
+  /* ✅ mais espaço entre título e itens no mobile */
+  .est-carousel-title {
+    font-size: 18px;
+    margin-bottom: 28px; /* ↑ afasta do carrossel */
+    padding: 0 20px;
+  }
+
   /* ===== CARROSSEL ===== */
-  .carousel-container {
-    padding: 0 16px;
+  .est-carousel-container {
+    padding: 16px 0 6px 0; /* ✅ afasta itens do texto */
     min-height: 140px;
     touch-action: pan-y;
     -webkit-overflow-scrolling: touch;
     cursor: grab;
   }
 
-  .carousel-container.dragging {
+  .est-carousel-container.dragging {
     cursor: grabbing;
   }
 
-  .carousel-track {
+  .est-carousel-track {
     gap: 18px;
     align-items: center;
     transition: none;
     will-change: auto;
+
+    padding: 0 14px; /* respiro nas bordas (sem limitar largura) */
   }
 
-  .carousel-item {
+  .est-carousel-item {
     width: clamp(140px, 42vw, 200px);
     min-width: unset;
     gap: 12px;
   }
 
-  .carousel-item img {
+  .est-carousel-item img {
     height: clamp(56px, 12vw, 84px);
     max-width: clamp(72px, 18vw, 110px);
   }
 
-  .carousel-item-name {
+  .est-carousel-item-name {
     font-size: 12px;
     max-width: 100%;
     padding: 0 6px;
     line-height: 1.3;
-  }
-
-  .carousel-title {
-    font-size: 18px;
-    margin-bottom: 24px;
-    padding: 0 20px;
   }
 
   /* ===== TÍTULO / HEADER ===== */
@@ -437,35 +515,35 @@ img#ysServicoEstetica4{
    MOBILE PEQUENO (≤ 480px)
    ========================================================= */
 @media (max-width: 480px) {
-  /* ===== CARROSSEL ===== */
-  .carousel-container {
-    padding: 0 12px;
+  .est-carousel-title {
+    font-size: 16px;
+    margin-bottom: 22px; /* ✅ mantém o afastamento */
+    padding: 0 16px;
+  }
+
+  .est-carousel-container {
+    padding: 16px 0 6px 0; /* ✅ mais ar entre texto e itens */
     min-height: 120px;
   }
 
-  .carousel-track {
+  .est-carousel-track {
     gap: 14px;
+    padding: 0 12px;
   }
 
-  .carousel-item {
+  .est-carousel-item {
     width: clamp(130px, 48vw, 180px);
     gap: 10px;
   }
 
-  .carousel-item img {
+  .est-carousel-item img {
     height: clamp(52px, 14vw, 76px);
     max-width: clamp(68px, 22vw, 96px);
   }
 
-  .carousel-item-name {
+  .est-carousel-item-name {
     font-size: 11px;
     line-height: 1.25;
-  }
-
-  .carousel-title {
-    font-size: 16px;
-    margin-bottom: 18px;
-    padding: 0 16px;
   }
 
   /* ===== TEXTOS ===== */
