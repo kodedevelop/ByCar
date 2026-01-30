@@ -7,7 +7,7 @@ export default function initCarrosselEstetica() {
     { imagem: 'ceramic-pro-textile.png', nome: 'CERAMIC PRO TEXTILE & CALIPER' }
   ];
 
-  const imagePath = '/assets/img/produtos/';
+  const imagePath = '../assets/img/produtos/';
   const container = document.getElementById('est-carousel-container');
   const track = document.getElementById('est-carousel-track');
 
