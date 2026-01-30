@@ -1,10 +1,10 @@
 export default function initCarrosselEstetica() {
   console.log('🎠 Inicializando carrossel de estética...');
   const produtos = [
-    { imagem: 'ceramic-pro-leather.png', nome: 'CERAMIC PRO LEATHER' },
-    { imagem: 'ceramic-pro-glass.png', nome: 'CERAMIC PRO GLASS' },
-    { imagem: 'ceramic-pro-marine.png', nome: 'CERAMIC PRO MARINE (INDÚSTRIA NAVAL)' },
-    { imagem: 'ceramic-pro-textile.png', nome: 'CERAMIC PRO TEXTILE & CALIPER' }
+    { imagem: 'ceramic-pro-leather.webp', nome: 'CERAMIC PRO LEATHER' },
+    { imagem: 'ceramic-pro-glass.webp', nome: 'CERAMIC PRO GLASS' },
+    { imagem: 'ceramic-pro-marine.webp', nome: 'CERAMIC PRO MARINE (INDÚSTRIA NAVAL)' },
+    { imagem: 'ceramic-pro-textile.webp', nome: 'CERAMIC PRO TEXTILE & CALIPER' }
   ];
 
   const imagePath = '../assets/img/produtos/';
