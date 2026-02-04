@@ -4,6 +4,8 @@ import { initVideoBackground } from './modules/video.js';
 import initCarrosselMarcas from './modules/carrosselMarcas.js';
 import initCarrosselEstetica from './modules/carrosselEstetica.js';
 import initMascaraForm from './modules/mascaraForm.js';
+import './modules/scriptOpcoes.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initStatusIndicator();
