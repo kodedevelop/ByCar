@@ -22,11 +22,19 @@ body{
 
 /* Whatsapp flutuante */
 img.whatsappFlutuante{
+    cursor: pointer;
     width: 80px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 70px;
+    right: 40px;
     z-index: 15;
+    animation: whatsappFlutuante 2s infinite;
+}
+
+@keyframes whatsappFlutuante{
+    0%  {scale: 1;}
+    50% {scale: 1.1;}
+    100%{scale: 1;}
 }
 
 /* Variáveis */
