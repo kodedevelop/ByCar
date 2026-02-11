@@ -52,3 +52,11 @@ Mensagem: ${mensagem}`;
     window.open(url, '_blank');
   }
 });
+
+
+/* Whatsapp flutuante */
+const wpp = document.querySelector('.whatsappFlutuante');
+
+wpp.addEventListener('click', ()=> {
+  window.open('https://wa.me/5581986210917?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.', '_blank');  // abre o zap em outra aba
+});
