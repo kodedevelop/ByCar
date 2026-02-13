@@ -11,3 +11,22 @@ export function initMobileMenu() {
     mobileBtn.textContent = isOpen ? '✕' : '☰'
   })
 }
+
+/* ==== Summary ==== */
+const summary = document.querySelector('.summary');
+
+/* Mudando o texto e a cor texto do summary com o click */
+summary.addEventListener('click', ()=>{
+  const summaryConteudo = summary.textContent;
+
+  if (summaryConteudo === "Serviços +"){
+    // Alterando o texto do Summary
+    summary.innerText = "Serviços -";
+    summary.style.color = "#000";
+
+  } else if (summaryConteudo === "Serviços -"){
+    // Alterando o texto do Summary
+    summary.innerText = "Serviços +";
+    summary.style.color = "#808383";
+  }
+})
