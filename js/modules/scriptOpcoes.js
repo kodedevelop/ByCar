@@ -12,5 +12,5 @@ export default function openTab(evt, tabName) {
   evt?.currentTarget?.classList.add("active");
 }
 
-// deixa disponível pro onclick do HTML
+
 window.openTab = openTab;

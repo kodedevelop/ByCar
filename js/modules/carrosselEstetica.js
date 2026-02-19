@@ -1,5 +1,4 @@
 export default function initCarrosselEstetica() {
-  console.log('🎠 Inicializando carrossel de estética...');
   const produtos = [
     { imagem: 'ceramic-pro-leather.webp', nome: 'CERAMIC PRO LEATHER' },
     { imagem: 'ceramic-pro-glass.webp', nome: 'CERAMIC PRO GLASS' },
@@ -16,7 +15,6 @@ export default function initCarrosselEstetica() {
     return;
   }
 
-  console.log('✅ Elementos do carrossel encontrados');
   // =========================
   // RTL normalization (robusto)
   // =========================
@@ -295,7 +293,6 @@ export default function initCarrosselEstetica() {
     setScroll(anchor);
     normalizeToAnchor();
     startAuto();
-    console.log('✅ Carrossel infinito (auto + drag) iniciado');
   });
 
   // Segurança extra: se a aba perder foco, quando voltar ele retoma
