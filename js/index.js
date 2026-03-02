@@ -4,7 +4,10 @@ import { initVideoBackground } from './modules/video.js';
 import initCarrosselMarcas from './modules/carrosselMarcas.js';
 import initCarrosselEstetica from './modules/carrosselEstetica.js';
 import initMascaraForm from './modules/mascaraForm.js';
+import abrirWhats from './modules/abrirWhats.js'
 import './modules/scriptOpcoes.js';
+
+window.abrirWhats = abrirWhats
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
