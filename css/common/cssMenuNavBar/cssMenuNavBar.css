@@ -1,5 +1,5 @@
 /* ===============================
-   SECTION 1 – HEADER / NAV
+  SECTION 1 – HEADER / NAV
 ================================ */
 @import url('../../arquivoBase.css');
 /* Reset local */
@@ -20,6 +20,8 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  animation: headerFadeIn .8s ease;
 }
 
 .section1-topbar-info {
@@ -52,6 +54,8 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: 16px;
+
+  animation: headerFadeIn .8s ease;
 }
 
 .section1-logo img {
