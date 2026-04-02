@@ -6,6 +6,7 @@ import initCarrosselEstetica from './modules/carrosselEstetica.js';
 import initMascaraForm from './modules/mascaraForm.js';
 import abrirWhats from './modules/abrirWhats.js'
 import './modules/scriptOpcoes.js';
+import { initAnimacaoImgCrescrendo } from './modules/animateNossaHistoria.js'
 
 window.abrirWhats = abrirWhats
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCarrosselMarcas();
   initCarrosselEstetica();
   initMascaraForm();
+  initAnimacaoImgCrescrendo();
 
   // ==========================
   // FORMULÁRIO + reCAPTCHA

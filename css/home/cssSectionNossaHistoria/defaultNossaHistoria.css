@@ -24,12 +24,18 @@ body {
   margin-bottom: 10px;
   font-weight: 300;
   letter-spacing: 1px;
+  animation: nossaHistoriaToleft .8s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
 }
 
 .nh-title {
   font-size: 42px;
   font-weight: 300;
   margin-bottom: 40px;
+  animation: nossaHistoriaToleft 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
 }
 
 .nh-title .nh-highlight {
@@ -45,6 +51,9 @@ body {
   max-width: 900px;
   text-align: justify;
   text-justify: inter-word;
+  animation: nossaHistoriaParagrafoFade 2s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
 }
 
 .nh-mission-items {
@@ -65,7 +74,11 @@ body {
   background-color: var(--amarelo5);
   margin-top: 12px;
   flex-shrink: 0;
+  animation: nossaHistoriaLinhaSize 2s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 10% cover 60%;
 }
+
 
 .nh-mission-content h3 {
   font-size: 16px;
@@ -80,6 +93,7 @@ body {
 }
 
 .nh-image-container {
+  scale: 0.2;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -93,8 +107,13 @@ body {
   z-index: 10;
 }
 
+.animateGrowImg{
+  scale: 1;
+  animation: nossaHistoriaImgShow .8s ease-in-out;
+}
+
 .nh-image-container img {
-  width: 105%;
+  width: 100%;
   height: auto;
   display: block;
 }

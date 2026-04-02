@@ -1,0 +1,37 @@
+/* Título */
+@keyframes nossaHistoriaToleft {
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    } to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* Parágrafo */
+@keyframes nossaHistoriaParagrafoFade {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+
+/* Linha amarela */
+@keyframes nossaHistoriaLinhaSize {
+    from{
+        width: 0;
+    } to{
+        width: 40px;
+    }
+}
+
+/* Imagem */
+@keyframes nossaHistoriaImgShow {
+    from{
+        scale: 0.2;
+    } to{
+        scale: 1;
+    }
+}
