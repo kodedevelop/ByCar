@@ -24,7 +24,6 @@
   transition: opacity 0.4s ease;
 }
 
-
 .section3 .hero-video-bg {
   position: absolute;
   inset: 0;
@@ -36,7 +35,7 @@
 }
 
 .section3 .hero-overlay {
-   position: absolute;
+  position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 3;
@@ -54,6 +53,9 @@
   font-weight: 700;
   margin-bottom: 16px;
   color: var(--preto4);
+  animation: heroToRight 1s ease;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
 }
 
 .section3 .hero-content p {
@@ -62,6 +64,9 @@
   font-size: 1.05rem;
   line-height: 1.6;
   color: #555;
+  animation: heroToRight 1.2s ease;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
 }
 
 .section3 .hero-actions {
@@ -85,6 +90,9 @@
   cursor: pointer;
   margin-top: 20px;
   transition: all 0.3s ease;
+  animation: heroToRight 1.4s ease;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
 }
 
 .section3 .btn-primary:hover {

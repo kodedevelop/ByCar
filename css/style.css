@@ -3,6 +3,7 @@
 /* CSS Home */
 @import url('home/cssCarrosselMarcas/sectionCarrosselMarcas.css');
 @import url('home/cssHero/cssHero.css');
+@import url('home/cssHero/keyframeHero.css');
 @import url('home/cssNossosValores/cssNossosValores.css');
 @import url('home/cssSectionNossaHistoria/defaultNossaHistoria.css');
 @import url('home/cssSectionNossosServicos/sectionNossosServicos.css');
