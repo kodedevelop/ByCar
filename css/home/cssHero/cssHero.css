@@ -52,10 +52,8 @@
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 16px;
+  opacity: 0;
   color: var(--preto4);
-  animation: heroToRight 1s ease;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
 }
 
 .section3 .hero-content p {
@@ -63,10 +61,8 @@
   margin: 0 auto 28px;
   font-size: 1.05rem;
   line-height: 1.6;
+  opacity: 0;
   color: #555;
-  animation: heroToRight 1.2s ease;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
 }
 
 .section3 .hero-actions {
@@ -80,19 +76,17 @@
 }
 
 .section3 .btn-primary {
-  background: var(--amareloGrandient);
-  color: #000;
   border: none;
-  padding: 14px 35px;
+  padding: 14px 55px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
   transition: all 0.3s ease;
-  animation: heroToRight 1.4s ease;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
+  opacity: 0;
+  color: #000;
+  background: var(--amareloGrandient);
 }
 
 .section3 .btn-primary:hover {
@@ -101,6 +95,10 @@
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
 
+/* Animação */
+.heroToRight{
+  animation: heroToRight 1.5s ease forwards;
+}
 
 /* Pictogramas */
 img#ysHome1{
