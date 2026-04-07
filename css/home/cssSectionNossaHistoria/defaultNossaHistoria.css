@@ -20,22 +20,17 @@ body {
 
 .nh-subtitle {
   font-size: 14px;
-  color: #999;;
   margin-bottom: 10px;
   font-weight: 300;
   letter-spacing: 1px;
-  animation: nossaHistoriaToleft .8s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 10% cover 40%;
+  opacity: 0;
+  color: #999;
 }
 
 .nh-title {
   font-size: 42px;
   font-weight: 300;
   margin-bottom: 40px;
-  animation: nossaHistoriaToleft 1s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 10% cover 40%;
 }
 
 .nh-title .nh-highlight {
@@ -46,18 +41,16 @@ body {
 .nh-content-text {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--branco1);
-  margin-bottom: 50px;
+  margin-bottom: 16px;
   max-width: 900px;
   text-align: justify;
   text-justify: inter-word;
-  animation: nossaHistoriaParagrafoFade 2s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 10% cover 50%;
+  opacity: 0;
+  color: var(--branco1);
 }
 
 .nh-mission-items {
-  margin-bottom: 45px;
+  margin: 45px 0;
   max-width: 900px;
 }
 
@@ -69,16 +62,12 @@ body {
 }
 
 .nh-line {
-  width: 40px;
+  width: 0;
   height: 1px;
   background-color: var(--amarelo5);
   margin-top: 12px;
   flex-shrink: 0;
-  animation: nossaHistoriaLinhaSize 2s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 10% cover 60%;
 }
-
 
 .nh-mission-content h3 {
   font-size: 16px;
@@ -105,11 +94,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-}
-
-.animateGrowImg{
-  scale: 1;
-  animation: nossaHistoriaImgShow .8s ease-in-out;
 }
 
 .nh-image-container img {
@@ -155,6 +139,23 @@ body {
   height: 200px;
   background-color: transparent;
 }
+
+
+/* ANIMAÇÕES */
+.nossaHistoriaToleft{
+  animation: nossaHistoriaToleft .8s ease-in-out forwards;
+}
+
+.nossaHistoriaLinhaSize{
+  animation: nossaHistoriaLinhaSize .8s ease-in-out forwards;
+}
+
+.animateGrowImg{
+  scale: 1;
+  animation: nossaHistoriaImgShow .8s ease-in-out;
+}
+
+
 
 @media (max-width: 1100px) {
   .nh-decorative-dots,

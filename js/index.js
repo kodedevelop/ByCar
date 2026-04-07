@@ -1,15 +1,15 @@
-import { initMobileMenu } from './modules/mobileMenu.js';
-import { initStatusIndicator } from './modules/statusIndicator.js';
-import { initVideoBackground } from './modules/video.js';
-import initCarrosselMarcas from './modules/carrosselMarcas.js';
-import initCarrosselEstetica from './modules/carrosselEstetica.js';
-import initMascaraForm from './modules/mascaraForm.js';
-import abrirWhats from './modules/abrirWhats.js';
+import { initMobileMenu }       from './modules/mobileMenu.js';
+import { initStatusIndicator }  from './modules/statusIndicator.js';
+import { initVideoBackground }  from './modules/video.js';
+import initCarrosselMarcas      from './modules/carrosselMarcas.js';
+import initCarrosselEstetica    from './modules/carrosselEstetica.js';
+import initMascaraForm          from './modules/mascaraForm.js';
+import abrirWhats               from './modules/abrirWhats.js';
 import './modules/scriptOpcoes.js';
 
 /* ANIMAÇÕES */
-import { initAnimacaoHero }          from './modules/animateHero.js';
-import { initAnimacaoImgCrescrendo } from './modules/animateNossaHistoria.js';
+import { initAnimacaoHero } from './modules/animateHero.js';
+import { initNossaHistTextos, initNossaHistLinhaAmarela, initNossaHistImg } from './modules/animateNossaHistoria.js';
 
 window.abrirWhats = abrirWhats
 
@@ -20,8 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initCarrosselMarcas();
   initCarrosselEstetica();
   initMascaraForm();
-  initAnimacaoImgCrescrendo();
   initAnimacaoHero();
+  initNossaHistTextos();
+  initNossaHistLinhaAmarela();
+  initNossaHistImg();
 
   // ==========================
   // FORMULÁRIO + reCAPTCHA

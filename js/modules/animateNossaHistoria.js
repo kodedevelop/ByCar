@@ -1,5 +1,34 @@
-/* Função da animação da imagem aumentando de tamanho */
-export function initAnimacaoImgCrescrendo() {
+/* Função para acionar a animção dos textos aparecerem da direita para esquerda */
+export function initNossaHistTextos(){    
+    const textos = document.querySelectorAll('[data-animete-NS-textos]');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaToleft');
+        });
+    }, {threshold: 0.2})
+
+    textos.forEach(texto => observer.observe(texto));
+}
+
+
+/* Função para acionar a animção das linhas amarelas aumentarem de tamanho */
+export function initNossaHistLinhaAmarela(){
+    const linhas = document.querySelectorAll('[data-animete-NS-linhas]');
+    console.log(linhas)
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaLinhaSize');
+        });
+    }, {threshold: 0.2})
+
+    linhas.forEach(linha => observer.observe(linha));
+}
+
+
+/* Função para acionar a animação da imagem aumentando de tamanho */
+export function initNossaHistImg() {
     const nossaHistImgContainer = document.querySelector('.nh-image-container');
     
     const observer = new IntersectionObserver((entries) => {
