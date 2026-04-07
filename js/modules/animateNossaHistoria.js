@@ -4,7 +4,7 @@ export function initNossaHistTextos(){
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaToleft');
+            if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaToRight');
         });
     }, {threshold: 0.2})
 

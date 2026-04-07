@@ -1,8 +1,8 @@
 /* Título e Parágrafos */
-@keyframes nossaHistoriaToleft {
+@keyframes nossaHistoriaToRight {
     from{
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(-50%);
     } to{
         opacity: 1;
         transform: translateX(0%);

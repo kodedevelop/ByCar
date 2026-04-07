@@ -142,8 +142,8 @@ body {
 
 
 /* ANIMAÇÕES */
-.nossaHistoriaToleft{
-  animation: nossaHistoriaToleft .8s ease-in-out forwards;
+.nossaHistoriaToRight{
+  animation: nossaHistoriaToRight .8s ease-in-out forwards;
 }
 
 .nossaHistoriaLinhaSize{
