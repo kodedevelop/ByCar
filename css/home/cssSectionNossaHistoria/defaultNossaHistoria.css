@@ -59,6 +59,7 @@ body {
   align-items: flex-start;
   margin-bottom: 30px;
   gap: 20px;
+  opacity: 0;
 }
 
 .nh-line {
@@ -147,12 +148,16 @@ body {
 }
 
 .nossaHistoriaLinhaSize{
-  animation: nossaHistoriaLinhaSize .8s ease-in-out forwards;
+  animation: nossaHistoriaLinhaSize .6s ease-in-out forwards;
+}
+
+.nossaHistSubtitulos{
+  animation: nossaHistSubtitulos .8s ease-in-out forwards;
 }
 
 .animateGrowImg{
   scale: 1;
-  animation: nossaHistoriaImgShow .8s ease-in-out;
+  animation: nossaHistoriaImgShow .8s ease-in-out forwards;
 }
 
 

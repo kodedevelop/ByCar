@@ -15,7 +15,6 @@ export function initNossaHistTextos(){
 /* Função para acionar a animção das linhas amarelas aumentarem de tamanho */
 export function initNossaHistLinhaAmarela(){
     const linhas = document.querySelectorAll('[data-animete-NS-linhas]');
-    console.log(linhas)
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -24,6 +23,19 @@ export function initNossaHistLinhaAmarela(){
     }, {threshold: 0.2})
 
     linhas.forEach(linha => observer.observe(linha));
+}
+
+/* Função para acionar a animção dos subtitulos aparecerem */
+export function initNossaHistSubtitulos(){
+    const subtitulos = document.querySelectorAll('[data-animete-NS-subtitulos]');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('nossaHistSubtitulos');
+        });
+    }, {threshold: 0.2})
+
+    subtitulos.forEach(subtitulo => observer.observe(subtitulo))
 }
 
 

@@ -9,7 +9,7 @@ import './modules/scriptOpcoes.js';
 
 /* ANIMAÇÕES */
 import { initAnimacaoHero } from './modules/animateHero.js';
-import { initNossaHistTextos, initNossaHistLinhaAmarela, initNossaHistImg } from './modules/animateNossaHistoria.js';
+import { initNossaHistTextos, initNossaHistLinhaAmarela, initNossaHistSubtitulos, initNossaHistImg } from './modules/animateNossaHistoria.js';
 
 window.abrirWhats = abrirWhats
 
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimacaoHero();
   initNossaHistTextos();
   initNossaHistLinhaAmarela();
+  initNossaHistSubtitulos();
   initNossaHistImg();
 
   // ==========================

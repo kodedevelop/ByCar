@@ -19,6 +19,15 @@
     }
 }
 
+/* Subtitulos */
+@keyframes nossaHistSubtitulos {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+
 
 /* Imagem */
 @keyframes nossaHistoriaImgShow {
