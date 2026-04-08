@@ -6,7 +6,7 @@ export function initNossaHistTextos(){
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaToRight');
         });
-    }, {threshold: 0.2})
+    }, {threshold: 0.2});
 
     textos.forEach(texto => observer.observe(texto));
 }
@@ -20,7 +20,7 @@ export function initNossaHistLinhaAmarela(){
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaLinhaSize');
         });
-    }, {threshold: 0.2})
+    }, {threshold: 0.2});
 
     linhas.forEach(linha => observer.observe(linha));
 }
@@ -33,9 +33,9 @@ export function initNossaHistSubtitulos(){
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add('nossaHistSubtitulos');
         });
-    }, {threshold: 0.2})
+    }, {threshold: 0.2});
 
-    subtitulos.forEach(subtitulo => observer.observe(subtitulo))
+    subtitulos.forEach(subtitulo => observer.observe(subtitulo));
 }
 
 

@@ -42,9 +42,10 @@ img#ysHome2 {
 
 .card-link-nossos-servicos {
   cursor: pointer;
-  text-decoration: none;
-  color: inherit;
   display: block;
+  text-decoration: none;
+  opacity: 0;
+  color: inherit;
 }
 
 .card-link-nossos-servicos:focus-visible {
