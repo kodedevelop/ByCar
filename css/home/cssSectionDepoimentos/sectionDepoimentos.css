@@ -46,6 +46,7 @@ img#ysHome3{
   align-items: center;
   width: 350px;
   height: 370px;
+  opacity: 0;
   background-color: var(--amarelo3);
   border: 5px solid var(--amarelo5);
   border-radius: 10px;

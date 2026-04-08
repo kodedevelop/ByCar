@@ -10,7 +10,8 @@ import './modules/scriptOpcoes.js';
 /* ANIMAÇÕES */
 import { initAnimacaoHero } from './modules/animateHero.js';
 import { initNossaHistTextos, initNossaHistLinhaAmarela, initNossaHistSubtitulos, initNossaHistImg } from './modules/animateNossaHistoria.js';
-import { initNossosValFadeIn } from './modules/nossosValores.js';
+import { initNossosValFadeIn }   from './modules/animeteNossosValores.js';
+import { initDepoimentosFadeIn } from './modules/animateDepoimentos.js';
 
 window.abrirWhats = abrirWhats
 
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNossaHistSubtitulos();
   initNossaHistImg();
   initNossosValFadeIn();
+  initDepoimentosFadeIn();
 
   // ==========================
   // FORMULÁRIO + reCAPTCHA
