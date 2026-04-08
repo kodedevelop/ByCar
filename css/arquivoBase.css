@@ -31,11 +31,14 @@ img.whatsappFlutuante{
     animation: whatsappFlutuante 2s infinite;
 }
 
+
+/* Animação */
 @keyframes whatsappFlutuante{
     0%  {scale: 1;}
     50% {scale: 1.1;}
     100%{scale: 1;}
 }
+
 
 /* Variáveis */
 :root{
@@ -70,4 +73,15 @@ img.whatsappFlutuante{
     --exo1: "Exo", sans-serif;
     --exo2: "Exo 2", sans-serif;
     --montserrat: "Montserrat", sans-serif;
+}
+
+
+/* Telas com 445px - 565px*/
+@media screen and (max-width: 450px){
+    /* Whatsapp flutuante */
+    img.whatsappFlutuante{
+        width: 60px;
+        bottom: 30px;
+        right: 30px;
+    }
 }
