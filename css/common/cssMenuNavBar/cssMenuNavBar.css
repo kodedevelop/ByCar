@@ -21,7 +21,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  animation: headerFadeIn .8s ease;
+  animation: headerFadeIn 1s ease;
 }
 
 .section1-topbar-info {

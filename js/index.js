@@ -12,6 +12,7 @@ import { initAnimacaoHero } from './modules/animateHero.js';
 import { initNossaHistTextos, initNossaHistLinhaAmarela, initNossaHistSubtitulos, initNossaHistImg } from './modules/animateNossaHistoria.js';
 import { initNossosValFadeIn }   from './modules/animeteNossosValores.js';
 import { initDepoimentosFadeIn } from './modules/animateDepoimentos.js';
+import { initFooterUp }          from './modules/animateFooter.js';
 
 window.abrirWhats = abrirWhats
 
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNossaHistImg();
   initNossosValFadeIn();
   initDepoimentosFadeIn();
+  initFooterUp();
 
   // ==========================
   // FORMULÁRIO + reCAPTCHA
