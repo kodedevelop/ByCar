@@ -1,5 +1,9 @@
 export function initNossosValFadeIn(){
     const valores = document.querySelectorAll('[data-animete-NV-valores]');
+
+    // Guard clause. 
+    // Se o elemento não existir em tal página, o código com esse elemento não será executado e isso previnirá erros
+    if (!valores.length) return;
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

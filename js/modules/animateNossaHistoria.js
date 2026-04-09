@@ -43,6 +43,10 @@ export function initNossaHistSubtitulos(){
 export function initNossaHistImg() {
     const nossaHistImgContainer = document.querySelector('.nh-image-container');
     
+    // Guard clause. 
+    // Se o elemento não existir em tal página, o código com esse elemento não será executado e isso previnirá erros
+    if (!nossaHistImgContainer) return;
+    
     const observer = new IntersectionObserver((entries) => {
         // Verificando quando o 1º (e único) item aparece na tela
         if (entries[0].isIntersecting) nossaHistImgContainer.classList.add('animateGrowImg');
