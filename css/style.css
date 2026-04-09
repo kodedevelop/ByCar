@@ -26,4 +26,8 @@
 @import url('common/cssFooter/keyframesFooter.css');
 @import url('common/cssMenuNavBar/cssMenuNavBar.css');
 @import url('common/cssMenuNavBar/keyframeMenuNavBar.css');
-@import url('common/servTitulo.css');
+@import url('common/cssServicos/servTitulo.css');
+@import url('common/cssServicos/responsividadePeliculaPff.css');
+@import url('common/cssServicos/responsividadeProjetosPersonalizacao.css');
+@import url('common/cssServicos/responsividadeEstetica.css');
+@import url('common/cssServicos/responsividadeFunilariaPintura.css');

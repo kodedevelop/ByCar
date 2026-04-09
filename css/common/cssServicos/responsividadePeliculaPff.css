@@ -1,0 +1,24 @@
+@media (max-width: 968px) {
+  .windowblue-intro,
+  .ppf-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .specs-grid,
+  .ppf-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs-container {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    width: 100%;
+  }
+
+  .windowblue-header h2,
+  .ppf-header h2 {
+    font-size: 24px;
+  }
+}

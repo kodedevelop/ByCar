@@ -1,0 +1,80 @@
+
+@media (max-width: 768px) {
+  .serv-title1 {
+    padding: 40px 20px;
+  }
+
+  .serv-title1::before {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    top: 20px;
+  }
+
+  .serv-title1-content {
+    padding: 0 20px;
+  }
+
+  .serv-service-label {
+    font-size: 16px;
+  }
+
+  .serv-service-title {
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  .serv-yellow-line {
+    width: 25px;
+  }
+
+  .serv-title1-description {
+    font-size: 14px;
+  }
+
+  .serv-section-title {
+    font-size: 22px;
+  }
+
+  .serv-section-text {
+    font-size: 15px;
+  }
+
+  .serv-section-aluminio,
+  .serv-section-convencional-content {
+    grid-template-columns: 1fr;
+  }
+
+  .serv-btn-orcamento {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Corrigindo a ordem para mobile: texto, botão, imagem */
+  .serv-section-aluminio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serv-section-aluminio figure {
+    order: 2;
+  }
+
+  .serv-section-aluminio > div {
+    order: 1;
+  }
+
+  .serv-section-convencional-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serv-section-convencional-content > div {
+    order: 1;
+  }
+
+  .serv-section-convencional-content figure {
+    order: 2;
+  }
+}
