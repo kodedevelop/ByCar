@@ -1,10 +1,10 @@
-/* Função para acionar a animção dos textos aparecerem da direita para esquerda */
-export function initNossaHistTextos(){    
-    const textos = document.querySelectorAll('[data-animete-NS-textos]');
+/* Função para acionar a animção dos elementos aparecerem da direita para esquerda */
+export function initFadeRight(){    
+    const textos = document.querySelectorAll('[data-animate-fadeRight]');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('nossaHistoriaToRight');
+            if (entry.isIntersecting) entry.target.classList.add('fadeRight');
         });
     }, {threshold: 0.2});
 
@@ -14,7 +14,7 @@ export function initNossaHistTextos(){
 
 /* Função para acionar a animção das linhas amarelas aumentarem de tamanho */
 export function initNossaHistLinhaAmarela(){
-    const linhas = document.querySelectorAll('[data-animete-NS-linhas]');
+    const linhas = document.querySelectorAll('[data-animate-NS-linhas]');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -26,12 +26,12 @@ export function initNossaHistLinhaAmarela(){
 }
 
 /* Função para acionar a animção dos subtitulos aparecerem */
-export function initNossaHistSubtitulos(){
-    const subtitulos = document.querySelectorAll('[data-animete-NS-subtitulos]');
+export function initOpacityFull(){
+    const subtitulos = document.querySelectorAll('[data-animate-opacityFull]');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('nossaHistSubtitulos');
+            if (entry.isIntersecting) entry.target.classList.add('opacityFull');
         });
     }, {threshold: 0.2});
 
@@ -49,7 +49,7 @@ export function initNossaHistImg() {
     
     const observer = new IntersectionObserver((entries) => {
         // Verificando quando o 1º (e único) item aparece na tela
-        if (entries[0].isIntersecting) nossaHistImgContainer.classList.add('animateGrowImg');
+        if (entries[0].isIntersecting) nossaHistImgContainer.classList.add('elementGrow');
     }, {threshold: 0.2});
 
     observer.observe(nossaHistImgContainer);

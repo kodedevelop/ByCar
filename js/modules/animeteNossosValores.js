@@ -1,5 +1,5 @@
 export function initNossosValFadeIn(){
-    const valores = document.querySelectorAll('[data-animete-NV-valores]');
+    const valores = document.querySelectorAll('[data-animAte-fadeUp]');
 
     // Guard clause. 
     // Se o elemento não existir em tal página, o código com esse elemento não será executado e isso previnirá erros

@@ -1,11 +1,11 @@
-export function initFooterUp(){
-    const footer = document.querySelector('[data-animete-footer]');
+export function initFadeUp(){
+    const footer = document.querySelector('[data-animate-footer]');
     
     const obeserver = new IntersectionObserver((entries) => {
         const entry = entries[0];
     
         if (entry.isIntersecting){
-            entry.target.classList.add('footerUp');
+            entry.target.classList.add('fadeUp');
         }
     }, {threshold: 0.2});
     
