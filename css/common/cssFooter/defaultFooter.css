@@ -6,10 +6,6 @@
   opacity: 0;
 }
 
-.footerUp{
-  animation: footerUp 1s ease-in-out forwards;
-}
-
 .footer-wrapper {
   max-width: 1400px;
   margin: 0 auto;

@@ -1,0 +1,103 @@
+/* 
+=========================================================================
+=== ARQUIVO EXCLUSIVO PARA ANIMAÇÕES QUE SERÃO ACIONADAS COM O SCROLL ===
+=========================================================================
+*/
+
+
+/* Elemento surgindo 30% da esquerda para direita */
+@keyframes heroToRight {
+    from{
+        opacity: 0;
+        transform: translateX(-30%);
+    } to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.heroToRight{
+    animation: heroToRight 1.5s ease forwards;
+}
+
+
+/* Elemento surgindo 50% da esquerda para direita */
+@keyframes nossaHistoriaToRight {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    } to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.nossaHistoriaToRight{
+    animation: nossaHistoriaToRight .8s ease-in-out forwards;
+}
+
+
+/* Linha amarela surge sem tamanho e termina com tamanho normal */
+@keyframes nossaHistoriaLinhaSize {
+    from{
+        width: 0;
+    } to{
+        width: 40px;
+    }
+}
+.nossaHistoriaLinhaSize{
+    animation: nossaHistoriaLinhaSize .6s ease-in-out forwards;
+}
+
+/* Opacidade sai de 0% para 100% */
+@keyframes nossaHistSubtitulos {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+.nossaHistSubtitulos{
+    animation: nossaHistSubtitulos .8s ease-in-out forwards;
+}
+
+
+/* A imagem surge pequena e termina no tamanho normal */
+@keyframes nossaHistoriaImgShow {
+    from{
+        scale: 0.2;
+    } to{
+        scale: 1;
+    }
+}
+.animateGrowImg{
+    scale: 1;
+    animation: nossaHistoriaImgShow .8s ease-in-out forwards;
+}
+
+
+/* Elementos surgindo para cima (usado em Nossos Valores) */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUp{
+    animation: fadeUp 0.6s forwards;
+}
+
+
+/* Footer surgindo para cima */
+@keyframes footerUp {
+    from{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.footerUp{
+    animation: footerUp 1s ease-in-out forwards;
+}

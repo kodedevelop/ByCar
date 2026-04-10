@@ -93,10 +93,6 @@
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
 
-/* Animação */
-.heroToRight{
-  animation: heroToRight 1.5s ease forwards;
-}
 
 /* Pictogramas */
 img#ysHome1{

@@ -140,25 +140,6 @@ body {
 }
 
 
-/* ANIMAÇÕES */
-.nossaHistoriaToRight{
-  animation: nossaHistoriaToRight .8s ease-in-out forwards;
-}
-
-.nossaHistoriaLinhaSize{
-  animation: nossaHistoriaLinhaSize .6s ease-in-out forwards;
-}
-
-.nossaHistSubtitulos{
-  animation: nossaHistSubtitulos .8s ease-in-out forwards;
-}
-
-.animateGrowImg{
-  scale: 1;
-  animation: nossaHistoriaImgShow .8s ease-in-out forwards;
-}
-
-
 
 @media (max-width: 1100px) {
   .nh-decorative-dots,
