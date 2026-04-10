@@ -44,6 +44,7 @@ img#ysServicoEstetica4 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  opacity: 0;
   color: var(--preto5);
   position: relative;
   padding-top: 20px;
@@ -62,6 +63,7 @@ img#ysServicoEstetica4 {
 .serv-section-text {
   font-size: 16px;
   line-height: 1.8;
+  opacity: 0;
   color: #333;
   margin-bottom: 15px;
   text-align: justify;
@@ -69,6 +71,8 @@ img#ysServicoEstetica4 {
 }
 
 .serv-btn-orcamento {
+  opacity: 0;
+  width: 100%;
   background: var(--amareloGrandient);
   color: #000;
   border: none;
@@ -85,6 +89,10 @@ img#ysServicoEstetica4 {
   background-color: #ffc700;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.serv-section-aluminio > figure, .serv-section-convencional-content > figure{
+  opacity: 0;
 }
 
 .serv-aluminio-image {
