@@ -24,6 +24,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  opacity: 0;
   color: var(--preto5);
   position: relative;
   padding-top: 20px;
@@ -96,7 +97,7 @@
   margin: 0 auto;
 }
 
-.serv-section-aluminio > figure, .serv-section-convencional-content > figure{
+img[data-animate-fadeRight]{
   opacity: 0;
 }
 
