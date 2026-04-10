@@ -1,37 +1,4 @@
-
 @media (max-width: 768px) {
-  .serv-title1 {
-    padding: 40px 20px;
-  }
-
-  .serv-title1::before {
-    width: 60px;
-    height: 60px;
-    right: 20px;
-    top: 20px;
-  }
-
-  .serv-title1-content {
-    padding: 0 20px;
-  }
-
-  .serv-service-label {
-    font-size: 16px;
-  }
-
-  .serv-service-title {
-    font-size: 24px;
-    gap: 10px;
-  }
-
-  .serv-yellow-line {
-    width: 25px;
-  }
-
-  .serv-title1-description {
-    font-size: 14px;
-  }
-
   .serv-section-title {
     font-size: 22px;
   }

@@ -1,7 +1,7 @@
 .serv-title1 {
   background-color: var(--preto5);
   color: var(--branco1);
-  padding: 40px 20px;
+  padding: 40px;
   text-align: left;
   position: relative;
 }
@@ -21,8 +21,6 @@
 
 .serv-title1-content {
   max-width: 1200px;
-  margin: 0;
-  padding: 0 40px;
 }
 
 .serv-service-label {
@@ -56,7 +54,7 @@
 }
 
 .serv-title1-description {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--branco2);
 }

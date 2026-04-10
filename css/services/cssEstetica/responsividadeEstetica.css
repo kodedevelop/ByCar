@@ -2,17 +2,11 @@
    DESKTOP MENOR / NOTEBOOKS (≤ 1280px)
    ========================================================= */
 @media (max-width: 1280px) {
-  .serv-title1-content {
-    padding: 0 24px;
-  }
-
-  .serv-section,
-  .serv-section-convencional {
+  .serv-section, .serv-section-convencional {
     padding: 56px 24px;
   }
 
-  .serv-section-aluminio,
-  .serv-section-convencional-content {
+  .serv-section-aluminio, .serv-section-convencional-content {
     gap: 28px;
   }
 
@@ -56,10 +50,6 @@
   .serv-section,
   .serv-section-convencional {
     padding: 50px 30px;
-  }
-
-  .serv-title1-content {
-    padding: 0 30px;
   }
 
   .est-carousel-title {
@@ -127,39 +117,6 @@
     max-width: 100%;
     padding: 0 6px;
     line-height: 1.3;
-  }
-
-  /* ===== TÍTULO / HEADER ===== */
-  .serv-title1 {
-    padding: 40px 20px;
-  }
-
-  .serv-title1::before {
-    width: 48px;
-    height: 48px;
-    top: 16px;
-    right: 16px;
-  }
-
-  .serv-title1-content {
-    padding: 0 20px;
-  }
-
-  .serv-service-label {
-    font-size: 16px;
-  }
-
-  .serv-service-title {
-    font-size: 24px;
-    gap: 10px;
-  }
-
-  .serv-yellow-line {
-    width: 24px;
-  }
-
-  .serv-title1-description {
-    font-size: 14px;
   }
 
   /* ===== SEÇÕES ===== */

@@ -1,0 +1,49 @@
+/* Telas com ... - 768px */
+@media screen and (min-width: 520px) and (max-width: 768px){
+    .serv-title1::before{
+        width: 45px;
+        height: 45px;
+    }
+
+    .serv-service-label {
+        font-size: 16px;
+    }
+
+    .serv-service-title {
+        font-size: 24px;
+        gap: 10px;
+    }
+
+    .serv-yellow-line {
+        width: 25px;
+        height: 5px;
+    }
+}
+
+/* Telas com ... - 519px */
+@media (max-width: 519px){
+    .serv-title1 {
+        padding: 40px 25px;
+    }
+
+    .serv-title1::before{
+        width: 35px;
+        height: 35px;
+        top: 40px;
+        right: 25px;
+    }
+
+    .serv-service-label {
+        font-size: 12px;
+    }
+
+    .serv-service-title {
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .serv-yellow-line {
+        width: 20px;
+        height: 5px;
+    }
+}
