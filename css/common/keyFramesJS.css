@@ -5,7 +5,7 @@
 */
 
 
-/* Linha amarela surge sem tamanho e termina com tamanho normal */
+/* Linha amarela surge sem tamanho e termina com tamanho de 40px */
 /* Propriedade para colocar no elemento HTML: data-animate-NS-linhas */
 @keyframes nossaHistoriaLinhaSize {
     from{
@@ -20,9 +20,10 @@
 
 
 /* O elemento surge pequena e termina no tamanho normal */
+/* Propriedade para colocar no elemento HTML: data-animate-elementGrow */
 @keyframes elementGrow {
     from{
-        scale: 0.2;
+        scale: 0;
     } to{
         scale: 1;
     }

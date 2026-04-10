@@ -8,7 +8,7 @@ import abrirWhats               from './modules/abrirWhats.js';
 import './modules/scriptOpcoes.js';
 
 /* ANIMAÇÕES */
-import { initFadeRight, initNossaHistLinhaAmarela, initOpacityFull, initNossaHistImg } from './modules/animateNossaHistoria.js';
+import { initFadeRight, initNossaHistLinhaAmarela, initOpacityFull, initElementGrow } from './modules/animateNossaHistoria.js';
 import { initNossosValFadeIn }   from './modules/animeteNossosValores.js';
 import { initDepoimentosFadeIn } from './modules/animateDepoimentos.js';
 import { initFadeUp }            from './modules/animateFooter.js';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFadeRight();
   initNossaHistLinhaAmarela();
   initOpacityFull();
-  initNossaHistImg();
+  initElementGrow();
   initNossosValFadeIn();
   initDepoimentosFadeIn();
   initFadeUp();

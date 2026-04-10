@@ -39,18 +39,19 @@ export function initOpacityFull(){
 }
 
 
-/* Função para acionar a animação da imagem aumentando de tamanho */
-export function initNossaHistImg() {
-    const nossaHistImgContainer = document.querySelector('.nh-image-container');
-    
+/* Função para acionar a animação do elemento aumentando de tamanho */
+export function initElementGrow() {
+    const elementsGrow = document.querySelectorAll('[data-animate-elementGrow]');
+
     // Guard clause. 
     // Se o elemento não existir em tal página, o código com esse elemento não será executado e isso previnirá erros
-    if (!nossaHistImgContainer) return;
-    
+    if (!elementsGrow) return;
+
     const observer = new IntersectionObserver((entries) => {
-        // Verificando quando o 1º (e único) item aparece na tela
-        if (entries[0].isIntersecting) nossaHistImgContainer.classList.add('elementGrow');
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('elementGrow');
+        });
     }, {threshold: 0.2});
 
-    observer.observe(nossaHistImgContainer);
+    elementsGrow.forEach(elementGrowing => observer.observe(elementGrowing));
 }
