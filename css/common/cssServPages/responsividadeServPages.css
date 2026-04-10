@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .serv-section-title {
+    font-size: 22px;
+  }
+
+  .serv-section-text {
+    font-size: 15px;
+  }
+
+  .serv-section-aluminio,
+  .serv-section-convencional-content {
+    grid-template-columns: 1fr;
+  }
+
+  .serv-btn-orcamento {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serv-section-aluminio {
+    display: flex;
+    flex-direction: column;
+  }
+}
