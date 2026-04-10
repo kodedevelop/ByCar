@@ -1,33 +1,33 @@
 @import url('./arquivoBase.css');
 
-/* CSS Home */
-@import url('home/cssCarrosselMarcas/sectionCarrosselMarcas.css');
+/* CSS - Home */
 @import url('home/cssHero/cssHero.css');
 @import url('home/cssHero/keyframeHero.css');
-@import url('home/cssNossosValores/cssNossosValores.css');
 @import url('home/cssSectionNossaHistoria/defaultNossaHistoria.css');
 @import url('home/cssSectionNossaHistoria/keyframeNossaHistoria.css');
 @import url('home/cssSectionNossosServicos/sectionNossosServicos.css');
+@import url('home/cssCarrosselMarcas/sectionCarrosselMarcas.css');
+@import url('home/cssNossosValores/cssNossosValores.css');
 @import url('home/cssSectionDepoimentos/sectionDepoimentos.css');
 
 
-/* CSS Página Serviços */
-@import url('services/cssServicos/estetica.css');
-@import url('services/cssServicos/funilariaPintura.css');
-@import url('services/cssServicos/peliculaPff.css');
-@import url('services/cssServicos/projetosPersonalizacao.css');
+/* CSS - Serviços */
+@import url('services/cssEstetica/defaultestetica.css');
+@import url('services/cssEstetica/responsividadeEstetica.css');
+@import url('services/cssFunilariaPintura/defaultFunilariaPintura.css');
+@import url('services/cssFunilariaPintura/responsividadefunilariaPintura.css');
+@import url('services/cssPeliculaPff/defaultPeliculaPff.css');
+@import url('services/cssPeliculaPff/responsividadepeliculaPff.css');
+@import url('services/cssProjetosPersonalizacao/defaultProjetosPersonalizacao.css');
+@import url('services/cssProjetosPersonalizacao/responsividadeprojetosPersonalizacao.css');
 
 
-/* CSS Common Layout */
+/* CSS - Common */
+@import url('common/cssMenuNavBar/cssMenuNavBar.css');
+@import url('common/cssMenuNavBar/keyframeMenuNavBar.css');
+@import url('common/cssBlackBanner/defaultBlackBanner.css');
 @import url('common/keyframesPictogramas.css');
 @import url('common/cssContato/defaultContato.css');
 @import url('common/cssContato/responsividadeContato.css');
 @import url('common/cssFooter/defaultFooter.css');
 @import url('common/cssFooter/keyframesFooter.css');
-@import url('common/cssMenuNavBar/cssMenuNavBar.css');
-@import url('common/cssMenuNavBar/keyframeMenuNavBar.css');
-@import url('common/cssServicos/servTitulo.css');
-@import url('common/cssServicos/responsividadePeliculaPff.css');
-@import url('common/cssServicos/responsividadeProjetosPersonalizacao.css');
-@import url('common/cssServicos/responsividadeEstetica.css');
-@import url('common/cssServicos/responsividadeFunilariaPintura.css');
