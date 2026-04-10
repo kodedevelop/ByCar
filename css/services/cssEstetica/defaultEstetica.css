@@ -1,12 +1,3 @@
-/* =========================================================
-   CONTEÚDO / SEÇÕES
-   ========================================================= */
-/* ✅ Correção: a SECTION já tem a classe .serv-section no HTML */
-.serv-section {
-  position: relative;
-  padding: 60px 40px;
-}
-
 /* Pictograma de Estrela (posicionamento/anim já devem existir no base) */
 img#ysServicoEstetica1 {
   top: 3%;
@@ -29,22 +20,6 @@ img#ysServicoEstetica4 {
   animation: ysServicoEstetica4 9s infinite;
 }
 
-.serv-section-title {
-  opacity: 0;
-}
-
-.serv-section-text {
-  opacity: 0;
-}
-
-.serv-btn-orcamento {
-  opacity: 0;
-  width: 100%;
-}
-
-.serv-section-aluminio > figure, .serv-section-convencional-content > figure{
-  opacity: 0;
-}
 
 /* =========================================================
    CARROSSEL (Estética Automotiva) — AGORA EDGE-TO-EDGE

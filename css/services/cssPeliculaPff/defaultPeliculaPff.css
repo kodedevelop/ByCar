@@ -1,22 +1,22 @@
 /* =========================================================
    CONTEÚDO / SEÇÕES
    ========================================================= */
+
+/* Pictograma de Estrela */
+img#ysServicoPelicula1{
+  top: 0%;
+  right: 2%;
+  animation: ysServicoPelicula1 9s infinite;
+}
+
 .serv-title1-description p {
   margin-bottom: 20px;
 }
-
 /* Seção Window Blue */
 .serv-section-windowblue {
   background-color: var(--branco2);
   padding: 80px 20px;
   position: relative;
-}
-
-/* Pictograma de Estrela */
-img#ysServicoPelicula1{
-    top: 0%;
-    right: 2%;
-    animation: ysServicoPelicula1 9s infinite;
 }
 
 .windowblue-container {
@@ -347,6 +347,7 @@ img#ysServicoPelicula1{
 }
 
 .butao .serv-btn-orcamento {
+  width: fit-content;
   display: block;
   margin-right: auto;
   margin-left: auto;

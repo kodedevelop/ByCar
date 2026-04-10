@@ -3,8 +3,10 @@
    ========================================================= */
 /* Estrutura de seção */
 .serv-section {
+  padding: 60px 20px;
   background-color: var(--branco2);
   width: 100%;
+  position: relative;
 }
 
 /* Grid padrão */
@@ -41,6 +43,7 @@
 .serv-section-text {
   font-size: 16px;
   line-height: 1.8;
+  opacity: 0;
   color: #333;
   margin-bottom: 15px;
   text-align: justify;
@@ -49,10 +52,12 @@
 
 /* Botão */
 .serv-btn-orcamento {
+  width: 100%;
   background: var(--amareloGrandient);
+  opacity: 0;
   color: #000;
   border: none;
-  padding: 14px 35px;
+  padding: 16px 64px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -89,6 +94,10 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.serv-section-aluminio > figure, .serv-section-convencional-content > figure{
+  opacity: 0;
 }
 
 .serv-section-convencional .serv-section-title {
