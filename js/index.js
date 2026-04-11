@@ -9,7 +9,7 @@ import './modules/scriptOpcoes.js';
 
 /* ANIMAÇÕES */
 import { initFadeRight, initNossaHistLinhaAmarela, initOpacityFull, initElementGrow } from './modules/animateNossaHistoria.js';
-import { initNossosValFadeIn }   from './modules/animeteNossosValores.js';
+import { initNossosValFadeUp, initWBCaixaPretasFadeUp, initWBOpcoesFadeUp, initPFFCaixaPretasFadeUp }   from './modules/animeteNossosValores.js';
 import { initDepoimentosFadeIn } from './modules/animateDepoimentos.js';
 import { initFadeUp }            from './modules/animateFooter.js';
 
@@ -26,7 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initNossaHistLinhaAmarela();
   initOpacityFull();
   initElementGrow();
-  initNossosValFadeIn();
+  initNossosValFadeUp();
+  initWBCaixaPretasFadeUp();
+  initWBOpcoesFadeUp();
+  initPFFCaixaPretasFadeUp();
   initDepoimentosFadeIn();
   initFadeUp();
 

@@ -93,6 +93,7 @@ img#ysServicoPelicula1{
     box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  opacity: 0;
 }
 
 .spec-card::before {
@@ -137,6 +138,7 @@ img#ysServicoPelicula1{
 
 .products-section h3 {
   font-size: 28px;
+  opacity: 0;
   color: var(--preto5);
   margin-bottom: 30px;
   text-align: center;
@@ -153,6 +155,7 @@ img#ysServicoPelicula1{
 .tab-button {
   background: transparent;
   border: 2px solid var(--preto3);
+  opacity: 0;
   color: var(--preto3);
   padding: 12px 30px;
   font-size: 16px;
@@ -309,6 +312,7 @@ img#ysServicoPelicula1{
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  opacity: 0;
 }
 
 .ppf-card::before {
