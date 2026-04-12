@@ -13,7 +13,7 @@ div.contatoContainer{
     z-index: 2;
 }
 
-p#contatoTexto{
+p.contatoTexto{
     margin-bottom: 25px;
     text-align: center;
     font-size: 30px;

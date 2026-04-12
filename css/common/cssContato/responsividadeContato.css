@@ -4,7 +4,7 @@
     /* -- Section - Contato */
     section#contato{ padding: 40px; }
 
-    p#contatoTexto{ font-size: 25px; }
+    p.contatoTexto{ font-size: 25px; }
 
     textarea{ height: 120px; }
 
@@ -25,7 +25,7 @@
 
     div.contatoContainer{ max-width: 320px; }
 
-    p#contatoTexto{
+    p.contatoTexto{
         font-size: 20px;
         margin: 20px auto;
     }
