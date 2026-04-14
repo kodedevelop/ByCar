@@ -12,6 +12,11 @@ export function initMascaraForm() {
 // Função que verifica se o reCAPTCHA foi preenchido e, caso preenchido, aciona enviarParaWhatsAp()
 export function initEnviarParaWhatsApp() {
     const formulario = document.querySelector('form');
+
+    // verifica se há formulário na pág
+    // sem isso ent vai ter erro na Home
+    if (!formulario) return;
+
     formulario.addEventListener('submit', function(event) {
         // Método para pegar a resposta (o token) do reCAPTCHA que é enviado
         // Se tivesse um back-end, seria esse token que seria enviado para o back-end.
