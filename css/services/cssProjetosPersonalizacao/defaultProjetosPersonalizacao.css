@@ -2,11 +2,11 @@
 img#ysServicoProjPersonalizacao1{
   top: 3%;
   right: 2%;
-  animation: ysServicoProjPersonalizacao1 9s infinite;
+  animation: ys-superiorDireito 9s infinite;
 }
 
 img#ysServicoProjPersonalizacao2{
   top: 3%;
   left: 2%;
-  animation: ysServicoProjPersonalizacao2 9s infinite;
+  animation: ys-superiorEsquerdo 9s infinite;
 }

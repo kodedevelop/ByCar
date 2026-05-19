@@ -1,14 +1,37 @@
+/* ===== Estrturura do nome da animação ===== */
 /*
+- ys: Yellow Star
 
-ys: Yellow Star
+- Estrturura 1:
+    ys + {página} + ordem que aparece na página
 
-Estrturura do nome da animação:
-ys + {página} + ordem que aparece na página
+- Ex: ysHome1
 
-Ex: ysHome1
+- Estrturura 2:
+    ys + "-" + posição que aparece
 
+- Ex: ys-superiorDireito
 */
 
+/* ===== Animações Gerais ===== */
+/* Estrelas do canto superior direito */
+@keyframes ys-superiorDireito {
+    0%{right: 3%; top: 2%;}
+    35%{right: 8%; top: 8%;}
+    70%{right: 5%; top: 8%;}
+    100%{right: 3%; top: 2%;}
+}
+
+/* Estrelas do canto superior direito */
+@keyframes ys-superiorEsquerdo{
+    0%{left: 3%; top: 2%;}
+    35%{left: 6%; top: 8%;}
+    70%{left: 1%; top: 12%;}
+    100%{left: 3%; top: 2%;}
+}
+
+
+/* ===== Animações Específicas ===== */
 /* Página HOME */
 /* 1a estrela amarela */
 @keyframes ysHome1{
@@ -37,30 +60,6 @@ Ex: ysHome1
 
 
 /* Página SERVIÇOS - Estética Automotiva */
-/* 1a estrela amarela */
-@keyframes ysServicoEstetica1 {
-    0%{right: 3%; top: 2%;}
-    35%{right: 8%; top: 8%;}
-    70%{right: 5%; top: 8%;}
-    100%{right: 3%; top: 2%;}
-}
-
-/* 2a estrela amarela */
-@keyframes ysServicoEstetica2 {
-    0%{left: 3%; top: 2%;}
-    35%{left: 6%; top: 8%;}
-    70%{left: 1%; top: 12%;}
-    100%{left: 3%; top: 2%;}
-}
-
-/* 3a estrela amarela */
-@keyframes ysServicoEstetica3 {
-    0%{right: 3%; top: 2%;}
-    35%{right: 8%; top: 8%;}
-    70%{right: 5%; top: 8%;}
-    100%{right: 3%; top: 2%;}
-}
-
 /* 4a estrela amarela */
 @keyframes ysServicoEstetica4 {
     0%{right: 3%; bottom: 30%;}
@@ -69,22 +68,6 @@ Ex: ysHome1
     100%{right: 3%; bottom: 30%;}
 }
 
-/* Página SERVIÇOS - FUNILARIA */
-/* 1a estrela amarela */
-@keyframes ysServicoFunilaria1 {
-    0%{right: 3%; top: 2%;}
-    35%{right: 8%; top: 8%;}
-    70%{right: 5%; top: 8%;}
-    100%{right: 3%; top: 2%;}
-}
-
-/* 2a estrela amarela */
-@keyframes ysServicoFunilaria2 {
-    0%{left: 3%; top: 2%;}
-    35%{left: 6%; top: 8%;}
-    70%{left: 1%; top: 12%;}
-    100%{left: 3%; top: 2%;}
-}
 
 /* Página SERVIÇOS - Estética Automotiva */
 /* 1a estrela amarela */
@@ -93,23 +76,6 @@ Ex: ysHome1
     35%{right: 8%; top: 5%;}
     70%{right: 1%; top: 3%;}
     100%{right: 3%; top: 0%;}
-}
-
-/* Página SERVIÇOS - PROJETOS E PERSONALIZAÇÕES */
-/* 1a estrela amarela */
-@keyframes ysServicoProjPersonalizacao1 {
-    0%{right: 3%; top: 2%;}
-    35%{right: 8%; top: 8%;}
-    70%{right: 5%; top: 8%;}
-    100%{right: 3%; top: 2%;}
-}
-
-/* 2a estrela amarela */
-@keyframes ysServicoProjPersonalizacao2 {
-    0%{left: 3%; top: 2%;}
-    35%{left: 5%; top: 8%;}
-    70%{left: 1%; top: 5%;}
-    100%{left: 3%; top: 2%;}
 }
 
 
