@@ -1,6 +1,6 @@
 /* - Main */
 /* -- Section - Contato */
-section#contato{
+section.contato{
     position: relative;
     padding: 60px;
     background-color: var(--branco2);

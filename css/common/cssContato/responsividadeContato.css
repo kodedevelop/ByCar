@@ -2,7 +2,7 @@
 @media screen and (min-width: 445px) and (max-width: 565px){
     /* - Main */
     /* -- Section - Contato */
-    section#contato{ padding: 40px; }
+    section.contato{ padding: 40px; }
 
     p.contatoTexto{ font-size: 25px; }
 
@@ -21,7 +21,7 @@
 @media screen and (max-width: 429px){
     /* - Main */
     /* -- Section - Contato */
-    section#contato{ padding: 30px 20px; }
+    section.contato{ padding: 30px 20px; }
 
     div.contatoContainer{ max-width: 320px; }
 
@@ -40,7 +40,6 @@
 
     button#enviarForm > i{ margin-left: 10px; }
 }
-
 
 /* Telas com ...px - 444px */
 @media screen and (max-width: 444px){
