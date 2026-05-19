@@ -28,6 +28,7 @@
   color: var(--preto1);
   margin-bottom: 8px;
   letter-spacing: 1px;
+  opacity: 0;
 }
 
 .serv-service-title {
@@ -37,6 +38,7 @@
   align-items: center;
   gap: 15px;
   font-weight: 600;
+  opacity: 0;
 }
 
 .serv-yellow-line {
@@ -57,6 +59,7 @@
   font-size: 16px;
   line-height: 1.8;
   color: var(--branco2);
+  opacity: 0;
 }
 
 .serv-content-wrapper {
